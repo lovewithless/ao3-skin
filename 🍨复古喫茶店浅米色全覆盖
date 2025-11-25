@@ -1825,3 +1825,51 @@ textarea:focus,
 #main .work a:visited {
   color: #9baa7e;
 }
+
+.statistics.modal,
+#stat_chart {
+  background: rgba(255, 248, 231, 0.85) !important;
+  background-image: url('https://64.media.tumblr.com/b247075e187fd0ffb8c5a266270fcf68/7cb797b285b68426-86/s1280x1920/0d88b93cfc62f68fb83821ba872ede4971837e90.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+  border-radius: 8px !important;
+}
+
+#stat_chart svg {
+  height: 100% !important;
+  min-height: 300px !important;
+}
+
+#stat_chart g[clip-path^=url] {
+  height: 100% !important;
+}
+
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.statistics.modal,
+.statistics.modal p,
+.statistics.modal span,
+.statistics.modal li,
+#stat_chart svg text {
+  color: #57310D !important;
+  font-weight: 500 !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+#stat_chart .tooltip {
+  background: rgba(251, 241, 215, 0.95) !important;
+  border: 1px solid #57310D !important;
+  color: #57310D !important;
+  padding: 4px 8px !important;
+}
+
+.statistics.modal .stats dl dd,
+.statistics.modal .stats dl dt {
+  visibility: visible !important;
+  display: block !important;
+}
