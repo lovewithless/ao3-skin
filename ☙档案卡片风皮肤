@@ -3918,11 +3918,6 @@ li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited:hover {
 #dashboard ul.expandable.secondary:not(.hidden) {
   display: block !important;
 }
-/* ====================== 长TAG不切割补丁 ======================
-   说明：用于解决“单个超长、无空格的TAG在移动端被截断/切割”的问题。
-   原因：部分区域对 TAG 链接使用了 white-space: nowrap，遇到超长词会溢出并被父容器裁切。
-   做法：仅对这些区域取消 nowrap，并允许任意位置换行；不改变你原有的其它效果。
-   =========================================================== */
 
 dl.work.meta dd.relationship ul.tags li a.tag,
 dl.work.meta dd.character ul.tags li a.tag,
@@ -3934,15 +3929,33 @@ li.bookmark.blurb ul.tags li a.tag {
   word-break: break-word !important;
 }
 
-/* ==================== 正文/章节：指定分隔线图片居中（按src锁定，移动端优先） ==================== */
-/* 只针对这张分隔线图：不会影响正文其他图片，也不会影响简介/笔记那条“平铺线” */
-#chapters .userstuff img[src*="b7eb0b9eceded61a151731fdc7c6df514eaff0bb.png"],
-.chapter  .userstuff img[src*="b7eb0b9eceded61a151731fdc7c6df514eaff0bb.png"],
-#workskin .userstuff img[src*="b7eb0b9eceded61a151731fdc7c6df514eaff0bb.png"],
-.userstuff img[src*="b7eb0b9eceded61a151731fdc7c6df514eaff0bb.png"] {
+body.works-show .wrapper > dl.work.meta,
+body.chapters-show .wrapper > dl.work.meta {
+  overflow: visible !important;
+}
+
+li.chapter .secondary select {
   display: block !important;
-  margin: 0.85em auto !important;
-  float: none !important;
-  max-width: 100% !important;
-  height: auto !important;
+  width: 140px !important;
+  max-width: 140px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  margin: 0 auto !important;
+}
+
+li.chapter .secondary input[type="submit"] {
+  display: block !important;
+  margin: 8px auto 0 !important;
+}
+
+#main ul.navigation.actions li.chapter {
+  position: relative !important;
+}
+
+#main ul.navigation.actions li.chapter .secondary {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
 }
