@@ -4132,3 +4132,54 @@ li.chapter .secondary input[type="submit"] {
   content: " · " !important;
   color: #9aa8b5 !important;
 }
+
+#main li.user.pseud.blurb {
+  background: #FCFAF6 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,.04),
+              0 2px  4px rgba(0,0,0,.05) !important;
+  padding: 1em 1.1em !important;
+  margin: 0 0 16px 0 !important;
+}
+
+#main ul.pseuds,
+#main ul.pseuds li {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#dashboard ul.navigation .expandable.secondary,
+#main ul.navigation .expandable.secondary {
+  background: #FCFAF6 !important;
+  border: 1px solid #D4E0E7 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,.08) !important;
+  padding: 6px !important;
+  margin-top: 6px !important;
+}
+
+#dashboard ul.navigation .expandable.secondary li,
+#main ul.navigation .expandable.secondary li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#dashboard ul.navigation .expandable.secondary li a,
+#main ul.navigation .expandable.secondary li a {
+  display: block !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+#dashboard ul.navigation .expandable.secondary li .current,
+#main ul.navigation .expandable.secondary li .current {
+  display: block !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+  background: rgba(212,224,231,.45) !important;
+}
