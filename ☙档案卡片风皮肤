@@ -3946,3 +3946,189 @@ li.chapter .secondary input[type="submit"] {
   right: auto !important;
   transform: translateX(-50%) !important;
 }
+
+#main #user-series li.series.blurb {
+  position: relative !important;
+  z-index: 0 !important;
+  background-color: #FCFAF6 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
+              0 2px  4px rgba(0, 0, 0, 0.05) !important;
+  padding: 2.4em 3.2em 2.2em 3.2em !important;
+  margin: 0 0 24px 0 !important;
+  overflow: hidden !important;
+}
+
+#main #user-series li.series.blurb::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -1 !important;
+  opacity: 0.7 !important;
+  background-image: url("https://64.media.tumblr.com/02df4ca4c275874f51dd542f3e9d3f36/6ef867351823b347-af/s2048x3072/242157e25a0112ea21902a45df3787300d80c6cf.png"),
+    url("https://64.media.tumblr.com/7d658d33d770de4a6c60354b7e05c76c/cfb02486730c869a-eb/s2048x3072/f5b15d757b886b7cb31cbcc7797f89f730033111.png") !important;
+  background-repeat: no-repeat, no-repeat !important;
+  background-position: left top, right bottom !important;
+  background-size: 85px auto, 85px auto !important;
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg)
+          brightness(85%) contrast(90%) !important;
+}
+
+#main #user-series li.series.blurb .header,
+#main #user-series li.series.blurb ul.tags,
+#main #user-series li.series.blurb blockquote {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#main #user-series li.series.blurb .header {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0 !important;
+  margin: 0 0 0.6em 0 !important;
+}
+
+#main #user-series li.series.blurb .header h4.heading {
+  order: 1 !important;
+  width: 100% !important;
+  margin: 0 0 0.45em 0 !important;
+  font-size: 0 !important;
+  line-height: 1.2 !important;
+}
+
+#main #user-series li.series.blurb .header h4.heading a {
+  display: block !important;
+  text-decoration: none !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+#main #user-series li.series.blurb .header h4.heading a:first-of-type {
+  font-size: 1.0rem !important;
+  font-weight: 700 !important;
+  color: #2C3E50 !important;
+  margin: 0 0 0.18em 0 !important;
+}
+
+#main #user-series li.series.blurb .header h4.heading a[rel="author"] {
+  font-size: 0.85rem !important;
+  font-weight: 400 !important;
+  color: #546e7a !important;
+  margin-top: 0.15em !important;
+}
+
+#main #user-series li.series.blurb .header .datetime {
+  order: 2 !important;
+  width: 100% !important;
+  position: static !important;
+  margin: 0.1em 0 0 0 !important;
+  font-size: 0.85em !important;
+  color: #78909c !important;
+  white-space: nowrap !important;
+}
+
+#main #user-series li.series.blurb .header ul.required-tags {
+  order: 3 !important;
+  width: 100% !important;
+  float: none !important;
+  text-align: center !important;
+  list-style: none !important;
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  margin: 0.4em 0 0.5em 0 !important;
+  padding: 0.6em 0 0 0 !important;
+  border-top: 1px solid #D4E0E7 !important;
+  line-height: 1.2 !important;
+  font-size: 0.85em !important;
+}
+
+#main #user-series li.series.blurb .header ul.required-tags li {
+  float: none !important;
+  display: inline-block !important;
+  margin: 0 6px !important;
+}
+
+#main #user-series li.series.blurb .header h5.fandoms.heading {
+  order: 4 !important;
+  width: 100% !important;
+  margin: 0.35em 0 0.35em 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+#main #user-series li.series.blurb .header h5.fandoms.heading a.tag {
+  display: inline-block !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  padding: 0 6px !important;
+}
+
+#main #user-series li.series.blurb .header h5.fandoms.heading a.tag::before,
+#main #user-series li.series.blurb .header h5.fandoms.heading a.tag::after {
+  content: "" !important;
+}
+
+#main #user-series li.series.blurb dl.stats {
+  display: block !important;
+  text-align: right !important;
+  margin: 0.8em 0.5em 0.1em 0 !important;
+  font-family: "Courier Prime","Courier New",Courier,monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.4 !important;
+  color: #667583 !important;
+}
+
+#main #user-series li.series.blurb dl.stats dt {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+#main #user-series li.series.blurb dl.stats dd {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+#main #user-series li.series.blurb dl.stats dd a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: inherit !important;
+}
+
+#main #user-series li.series.blurb dl.stats dd.words::before {
+  content: "Words " !important;
+  font-weight: 600 !important;
+  color: #3f4e5a !important;
+}
+
+#main #user-series li.series.blurb dl.stats dd.works::before {
+  content: "Works " !important;
+  font-weight: 600 !important;
+  color: #3f4e5a !important;
+}
+
+#main #user-series li.series.blurb dl.stats dd:not(:last-child)::after {
+  content: " · " !important;
+  color: #9aa8b5 !important;
+}
