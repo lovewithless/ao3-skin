@@ -1873,3 +1873,7 @@ textarea:focus,
   visibility: visible !important;
   display: block !important;
 }
+
+@media (min-width: 900px){
+  #main{ max-width: 1200px !important; } /* 1200/1300/1400 你自己试手感 */
+}
