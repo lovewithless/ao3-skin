@@ -536,8 +536,28 @@ h5.fandoms.heading a.tag {
 }
 
 ul.tags li a.tag:hover,
-h5.fandoms.heading a.tag:hover {
+ul.tags li a.tag:focus,
+ul.tags li a.tag:active,
+h5.fandoms.heading a.tag:hover,
+h5.fandoms.heading a.tag:focus,
+h5.fandoms.heading a.tag:active {
   color: #000000 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+#main .blurb a.tag:hover,
+#main .blurb a.tag:focus,
+#main .blurb a.tag:active,
+#main dl.work.meta a.tag:hover,
+#main dl.work.meta a.tag:focus,
+#main dl.work.meta a.tag:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 #main ol.pagination {
@@ -730,7 +750,7 @@ ul.actions li {
   display: inline-block;
 }
 
-.wrapper > dl.work.meta {
+#main dl.work.meta.group {
   position: relative !important;
   z-index: 0 !important;
   background-color: #FCFAF6 !important;
@@ -745,7 +765,7 @@ ul.actions li {
   overflow: hidden !important;
 }
 
-.wrapper > dl.work.meta::before {
+#main dl.work.meta.group::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1584,22 +1604,34 @@ dl.work.meta dd.freeform {
 }
 
 dl.work.meta dd.relationship ul.tags,
+dl.work.meta dd.relationship ul.commas,
 dl.work.meta dd.character ul.tags,
-dl.work.meta dd.freeform ul.tags {
+dl.work.meta dd.character ul.commas,
+dl.work.meta dd.freeform ul.tags,
+dl.work.meta dd.freeform ul.commas {
   margin: 0 !important;
   padding: 0 !important;
 }
 
 dl.work.meta dd.relationship ul.tags li,
+dl.work.meta dd.relationship ul.commas li,
 dl.work.meta dd.character ul.tags li,
-dl.work.meta dd.freeform ul.tags li {
+dl.work.meta dd.character ul.commas li,
+dl.work.meta dd.freeform ul.tags li,
+dl.work.meta dd.freeform ul.commas li {
   display: inline-block !important;
   margin: 0.1em 0.25em !important;
 }
 
-dl.work.meta dd.relationship ul.tags li a.tag,
-dl.work.meta dd.character ul.tags li a.tag,
-dl.work.meta dd.freeform ul.tags li a.tag {
+dl.work.meta dd.relationship ul.tags li,
+dl.work.meta dd.relationship ul.commas li a.tag,
+dl.work.meta dd.relationship ul.commas li a.tag,
+dl.work.meta dd.character ul.tags li,
+dl.work.meta dd.character ul.commas li a.tag,
+dl.work.meta dd.character ul.commas li a.tag,
+dl.work.meta dd.freeform ul.tags li,
+dl.work.meta dd.freeform ul.commas li a.tag,
+dl.work.meta dd.freeform ul.commas li a.tag {
   display: inline-block !important;
   white-space: nowrap !important;
   padding: 0 0.3em !important;
@@ -3906,9 +3938,15 @@ li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited:hover {
   display: block !important;
 }
 
-dl.work.meta dd.relationship ul.tags li a.tag,
-dl.work.meta dd.character ul.tags li a.tag,
-dl.work.meta dd.freeform ul.tags li a.tag,
+dl.work.meta dd.relationship ul.tags li,
+dl.work.meta dd.relationship ul.commas li a.tag,
+dl.work.meta dd.relationship ul.commas li a.tag,
+dl.work.meta dd.character ul.tags li,
+dl.work.meta dd.character ul.commas li a.tag,
+dl.work.meta dd.character ul.commas li a.tag,
+dl.work.meta dd.freeform ul.tags li,
+dl.work.meta dd.freeform ul.commas li a.tag,
+dl.work.meta dd.freeform ul.commas li a.tag,
 li.work.blurb ul.tags li a.tag,
 li.bookmark.blurb ul.tags li a.tag {
   white-space: normal !important;
@@ -3916,8 +3954,8 @@ li.bookmark.blurb ul.tags li a.tag {
   word-break: break-word !important;
 }
 
-body.works-show .wrapper > dl.work.meta,
-body.chapters-show .wrapper > dl.work.meta {
+body.works-show #main dl.work.meta.group,
+body.chapters-show #main dl.work.meta.group {
   overflow: visible !important;
 }
 
@@ -4182,4 +4220,547 @@ li.chapter .secondary input[type="submit"] {
   padding: 8px 10px !important;
   border-radius: 8px !important;
   background: rgba(212,224,231,.45) !important;
+}
+
+#header #search .tip,
+#header #search p.tip,
+#main #search .tip,
+#main #search p.tip {
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 999px !important;
+  box-shadow: 0 2px 6px rgba(118,157,173,0.10) !important;
+  display: inline-block !important;
+  max-width: 90% !important;
+  box-sizing: border-box !important;
+  padding: 4px 10px !important;
+  margin-top: 6px !important;
+  color: #667583 !important;
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+  font-family: "Courier Prime","Courier New",monospace !important;
+}
+
+#header #search .tip::before,
+#header #search p.tip::before,
+#main #search .tip::before,
+#main #search p.tip::before {
+  content: "✧ ";
+  opacity: .8;
+}
+
+#header #search .tip::after,
+#header #search p.tip::after,
+#main #search .tip::after,
+#main #search p.tip::after {
+  content: " ✧";
+  opacity: .8;
+}
+
+#main form[action*="/preferences"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main form[action*="/preferences"] fieldset {
+  background: #FCFAF6 !important;
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 0 1px #AEC6CF inset,               
+    0 2px 8px rgba(0,0,0,0.05) !important;
+  padding: 14px 14px 10px 14px !important;
+  margin: 0 0 16px 0 !important;
+}
+
+#main form[action*="/preferences"] fieldset legend {
+  display: inline-block !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 999px !important;
+  box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
+  padding: 6px 14px !important;
+  margin: 0 0 10px 10px !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
+  font-weight: bold !important;
+  letter-spacing: 0.02em !important;
+}
+
+#main form[action*="/preferences"] input[type="text"],
+#main form[action*="/preferences"] input[type="email"],
+#main form[action*="/preferences"] input[type="password"],
+#main form[action*="/preferences"] select,
+#main form[action*="/preferences"] textarea {
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
+  padding: 0.55em 0.75em !important;
+  box-sizing: border-box !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
+}
+
+#main form[action*="/preferences"] label {
+  display: block !important;
+  margin: 0.35em 0 !important;
+  line-height: 1.45 !important;
+}
+
+#main form[action*="/preferences"] input[type="checkbox"] {
+  transform: scale(1.05);
+  margin-right: 0.6em !important;
+  vertical-align: middle !important;
+}
+
+#main form[action*="/preferences"] a.help,
+#main form[action*="/preferences"] .help a,
+#main form[action*="/preferences"] a[title*="help"],
+#main form[action*="/preferences"] a[title*="Help"] {
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 999px !important;
+  padding: 0 0.55em !important;
+  text-decoration: none !important;
+  color: #4682B4 !important;
+}
+
+#main form[action*="/preferences"] .note,
+#main form[action*="/preferences"] .footnote,
+#main form[action*="/preferences"] p.note,
+#main form[action*="/preferences"] p.footnote {
+  background: #FFFFFF !important;
+  border: 1px dashed #AEC6CF !important;
+  border-radius: 10px !important;
+  padding: 0.6em 0.8em !important;
+}
+
+#main form#work_search,
+#main form[action*="/works/search"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main form#work_search fieldset,
+#main form[action*="/works/search"] fieldset {
+  background: #FCFAF6 !important;
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 0 1px #AEC6CF inset,
+    0 2px 8px rgba(0,0,0,0.05) !important;
+  padding: 14px 14px 10px 14px !important;
+  margin: 0 0 16px 0 !important;
+}
+
+#main form#work_search fieldset legend,
+#main form[action*="/works/search"] fieldset legend {
+  display: inline-block !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 999px !important;
+  box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
+  padding: 6px 14px !important;
+  margin: 0 0 10px 10pxexplains !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
+  font-weight: bold !important;
+  letter-spacing: 0.02em !important;
+}
+
+#main form#work_search,
+#main form#people_search,
+#main form#tag_search,
+#main form#bookmark_search,
+#main form[action*="/works/search"],
+#main form[action*="/people/search"],
+#main form[action*="/users/search"],
+#main form[action*="/tags/search"],
+#main form[action*="/bookmarks/search"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main form#work_search fieldset,
+#main form#people_search fieldset,
+#main form#tag_search fieldset,
+#main form#bookmark_search fieldset,
+#main form[action*="/works/search"] fieldset,
+#main form[action*="/people/search"] fieldset,
+#main form[action*="/users/search"] fieldset,
+#main form[action*="/tags/search"] fieldset,
+#main form[action*="/bookmarks/search"] fieldset {
+  background: #FCFAF6 !important;
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 0 1px #AEC6CF inset,
+    0 2px 8px rgba(0,0,0,0.05) !important;
+  padding: 14px 14px 10px 14px !important;
+  margin: 0 0 16px 0 !important;
+}
+
+#main form#work_search fieldset legend,
+#main form#people_search fieldset legend,
+#main form#tag_search fieldset legend,
+#main form#bookmark_search fieldset legend,
+#main form[action*="/works/search"] fieldset legend,
+#main form[action*="/people/search"] fieldset legend,
+#main form[action*="/users/search"] fieldset legend,
+#main form[action*="/tags/search"] fieldset legend,
+#main form[action*="/bookmarks/search"] fieldset legend {
+  display: inline-block !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 999px !important;
+  box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
+  padding: 6px 14px !important;
+  margin: 0 0 10px 10px !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
+  font-weight: bold !important;
+  letter-spacing: 0.02em !important;
+}
+
+#main form#work_search dl,
+#main form#work_search dt,
+#main form#work_search dd,
+#main form#people_search dl,
+#main form#people_search dt,
+#main form#people_search dd,
+#main form#tag_search dl,
+#main form#tag_search dt,
+#main form#tag_search dd,
+#main form#bookmark_search dl,
+#main form#bookmark_search dt,
+#main form#bookmark_search dd,
+#main form[action*="/works/search"] dl,
+#main form[action*="/works/search"] dt,
+#main form[action*="/works/search"] dd,
+#main form[action*="/people/search"] dl,
+#main form[action*="/people/search"] dt,
+#main form[action*="/people/search"] dd,
+#main form[action*="/users/search"] dl,
+#main form[action*="/users/search"] dt,
+#main form[action*="/users/search"] dd,
+#main form[action*="/tags/search"] dl,
+#main form[action*="/tags/search"] dt,
+#main form[action*="/tags/search"] dd,
+#main form[action*="/bookmarks/search"] dl,
+#main form[action*="/bookmarks/search"] dt,
+#main form[action*="/bookmarks/search"] dd {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main form#work_search input[type="text"],
+#main form#work_search input[type="search"],
+#main form#work_search input[type="url"],
+#main form#work_search select,
+#main form#work_search textarea,
+#main form#people_search input[type="text"],
+#main form#people_search input[type="search"],
+#main form#people_search input[type="url"],
+#main form#people_search select,
+#main form#people_search textarea,
+#main form#tag_search input[type="text"],
+#main form#tag_search input[type="search"],
+#main form#tag_search input[type="url"],
+#main form#tag_search select,
+#main form#tag_search textarea,
+#main form#bookmark_search input[type="text"],
+#main form#bookmark_search input[type="search"],
+#main form#bookmark_search input[type="url"],
+#main form#bookmark_search select,
+#main form#bookmark_search textarea,
+#main form[action*="/works/search"] input[type="text"],
+#main form[action*="/works/search"] input[type="search"],
+#main form[action*="/works/search"] input[type="url"],
+#main form[action*="/works/search"] select,
+#main form[action*="/works/search"] textarea,
+#main form[action*="/people/search"] input[type="text"],
+#main form[action*="/people/search"] input[type="search"],
+#main form[action*="/people/search"] input[type="url"],
+#main form[action*="/people/search"] select,
+#main form[action*="/people/search"] textarea,
+#main form[action*="/users/search"] input[type="text"],
+#main form[action*="/users/search"] input[type="search"],
+#main form[action*="/users/search"] input[type="url"],
+#main form[action*="/users/search"] select,
+#main form[action*="/users/search"] textarea,
+#main form[action*="/tags/search"] input[type="text"],
+#main form[action*="/tags/search"] input[type="search"],
+#main form[action*="/tags/search"] input[type="url"],
+#main form[action*="/tags/search"] select,
+#main form[action*="/tags/search"] textarea,
+#main form[action*="/bookmarks/search"] input[type="text"],
+#main form[action*="/bookmarks/search"] input[type="search"],
+#main form[action*="/bookmarks/search"] input[type="url"],
+#main form[action*="/bookmarks/search"] select,
+#main form[action*="/bookmarks/search"] textarea {
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
+  padding: 0.55em 0.75em !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
+}
+
+#main form#work_search input[type="checkbox"],
+#main form#work_search input[type="radio"],
+#main form#people_search input[type="checkbox"],
+#main form#people_search input[type="radio"],
+#main form#tag_search input[type="checkbox"],
+#main form#tag_search input[type="radio"],
+#main form#bookmark_search input[type="checkbox"],
+#main form#bookmark_search input[type="radio"],
+#main form[action*="/works/search"] input[type="checkbox"],
+#main form[action*="/works/search"] input[type="radio"],
+#main form[action*="/people/search"] input[type="checkbox"],
+#main form[action*="/people/search"] input[type="radio"],
+#main form[action*="/users/search"] input[type="checkbox"],
+#main form[action*="/users/search"] input[type="radio"],
+#main form[action*="/tags/search"] input[type="checkbox"],
+#main form[action*="/tags/search"] input[type="radio"],
+#main form[action*="/bookmarks/search"] input[type="checkbox"],
+#main form[action*="/bookmarks/search"] input[type="radio"] {
+  transform: scale(1.05);
+  margin-right: 0.6em !important;
+  vertical-align: middle !important;
+}
+
+#main form#work_search label,
+#main form#people_search label,
+#main form#tag_search label,
+#main form#bookmark_search label,
+#main form[action*="/works/search"] label,
+#main form[action*="/people/search"] label,
+#main form[action*="/users/search"] label,
+#main form[action*="/tags/search"] label,
+#main form[action*="/bookmarks/search"] label {
+  line-height: 1.45 !important;
+}
+
+#main form#work_search input[type="submit"],
+#main form#work_search button,
+#main form#people_search input[type="submit"],
+#main form#people_search button,
+#main form#tag_search input[type="submit"],
+#main form#tag_search button,
+#main form#bookmark_search input[type="submit"],
+#main form#bookmark_search button,
+#main form[action*="/works/search"] input[type="submit"],
+#main form[action*="/works/search"] button,
+#main form[action*="/people/search"] input[type="submit"],
+#main form[action*="/people/search"] button,
+#main form[action*="/users/search"] input[type="submit"],
+#main form[action*="/users/search"] button,
+#main form[action*="/tags/search"] input[type="submit"],
+#main form[action*="/tags/search"] button,
+#main form[action*="/bookmarks/search"] input[type="submit"],
+#main form[action*="/bookmarks/search"] button {
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 99px !important;
+  padding: 0.45em 1.1em !important;
+  color: #3b4b5f !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+#main form#work_search input[type="submit"]:hover,
+#main form#work_search button:hover,
+#main form#people_search input[type="submit"]:hover,
+#main form#people_search button:hover,
+#main form#tag_search input[type="submit"]:hover,
+#main form#tag_search button:hover,
+#main form#bookmark_search input[type="submit"]:hover,
+#main form#bookmark_search button:hover,
+#main form[action*="/works/search"] input[type="submit"]:hover,
+#main form[action*="/works/search"] button:hover,
+#main form[action*="/people/search"] input[type="submit"]:hover,
+#main form[action*="/people/search"] button:hover,
+#main form[action*="/users/search"] input[type="submit"]:hover,
+#main form[action*="/users/search"] button:hover,
+#main form[action*="/tags/search"] input[type="submit"]:hover,
+#main form[action*="/tags/search"] button:hover,
+#main form[action*="/bookmarks/search"] input[type="submit"]:hover,
+#main form[action*="/bookmarks/search"] button:hover {
+  background: #f2f6ff !important;
+  color: #24364c !important;
+}
+
+#main form#work_search a.help,
+#main form#work_search .help a,
+#main form#people_search a.help,
+#main form#people_search .help a,
+#main form#tag_search a.help,
+#main form#tag_search .help a,
+#main form#bookmark_search a.help,
+#main form#bookmark_search .help a,
+#main form[action*="/works/search"] a.help,
+#main form[action*="/works/search"] .help a,
+#main form[action*="/people/search"] a.help,
+#main form[action*="/people/search"] .help a,
+#main form[action*="/users/search"] a.help,
+#main form[action*="/users/search"] .help a,
+#main form[action*="/tags/search"] a.help,
+#main form[action*="/tags/search"] .help a,
+#main form[action*="/bookmarks/search"] a.help,
+#main form[action*="/bookmarks/search"] .help a {
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 999px !important;
+  padding: 0 0.55em !important;
+  text-decoration: none !important;
+  color: #4682B4 !important;
+}
+
+.work.blurb .header h4.heading,
+.bookmark.blurb .header h4.heading {
+  font-size: 0 !important;
+}
+
+.work.blurb .header h4.heading a[href*="/users/"],
+.bookmark.blurb .header h4.heading a[href*="/users/"] {
+  font-size: 0 !important;
+}
+
+.work.blurb .header h4.heading a:first-of-type,
+.bookmark.blurb .header h4.heading a:first-of-type {
+  font-size: 1.0rem !important;
+  font-weight: bold !important;
+  color: #2C3E50 !important;
+  display: block;
+  text-decoration: none !important;
+}
+
+.work.blurb .header h4.heading a[rel="author"],
+.bookmark.blurb .header h4.heading a[rel="author"] {
+  font-size: 0.85rem !important;
+  font-weight: normal !important;
+  color: #546e7a !important;
+  display: block !important;
+}
+
+.work.blurb .header h4.heading a[href*="/users/"]:not([rel="author"]):not(:first-of-type),
+.bookmark.blurb .header h4.heading a[href*="/users/"]:not([rel="author"]):not(:first-of-type) {
+  font-size: 0.85rem !important;
+  font-weight: normal !important;
+  color: #546e7a !important;
+  display: block !important;
+}
+
+.work.blurb .header h4.heading a[href*="/collections/anonymous"],
+.bookmark.blurb .header h4.heading a[href*="/collections/anonymous"] {
+  display: none !important;
+}
+
+.work.blurb .header h4.heading:not(:has(a[rel="author"])) a[href*="/users/"]:not([rel="author"]):not(:first-of-type)::before,
+.bookmark.blurb .header h4.heading:not(:has(a[rel="author"])) a[href*="/users/"]:not([rel="author"]):not(:first-of-type)::before {
+  content: "Anonymous";
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: #546e7a;
+}
+
+.work.blurb .header h4.heading:not(:has(a[rel="author"])):not(:has(a[href*="/users/"]:not([rel="author"]):not(:first-of-type)))::after,
+.bookmark.blurb .header h4.heading:not(:has(a[rel="author"])):not(:has(a[href*="/users/"]:not([rel="author"]):not(:first-of-type)))::after {
+  content: "Anonymous";
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: #546e7a;
+}
+
+body.works-show #main dl.work.meta.group,
+body.chapters-show #main dl.work.meta.group {
+  max-width: 960px !important;
+  margin: 20px auto 24px auto !important;
+}
+
+body.works-show #main dl.work.meta.group dd.tags ul.commas,
+body.chapters-show #main dl.work.meta.group dd.tags ul.commas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+body.works-show #main dl.work.meta.group dd.tags ul.commas > li,
+body.chapters-show #main dl.work.meta.group dd.tags ul.commas > li {
+  float: none !important;
+  display: inline-block !important;
+  margin: 0 6px 6px !important;
+  padding: 0 !important;
+}
+
+body.works-show #main dl.work.meta.group dd.tags ul.commas > li:after,
+body.chapters-show #main dl.work.meta.group dd.tags ul.commas > li:after {
+  display: none !important;
+}
+
+#dashboard h4.landmark.heading,
+#dashboard ul.navigation.actions {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+#dashboard h4.landmark.heading::before,
+#dashboard h4.landmark.heading::after,
+#dashboard ul.navigation.actions::before,
+#dashboard ul.navigation.actions::after {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+  background: none !important;
+}
+
+#dashboard ul.navigation.actions > li {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+body[class*="collections"] a.tag:hover,
+body[class*="collections"] a.tag:active,
+body[class*="collections"] a.tag:focus,
+body[class*="collections"] a.tag:focus-visible {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body[class*="collections"] a.tag:focus,
+body[class*="collections"] a.tag:focus-visible {
+  outline: 1px dotted currentColor !important;
+  outline-offset: 2px !important;
+}
+
+ul.tags li a.tag:hover,
+ul.tags li a.tag:focus,
+ul.tags li a.tag:active {
+  color: #4682B4 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+#main .actions a:hover,
+#main .actions a:focus,
+#main .action:hover,
+#main .action:focus {
+  color: #4682B4 !important;
+  border: none !important;
+  background: transparent !important;
 }
