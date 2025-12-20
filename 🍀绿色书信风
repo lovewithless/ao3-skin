@@ -2266,3 +2266,26 @@ li.bookmark.blurb {
   margin-bottom: 20px !important;
   border: none !important;
 }
+
+ol.index li.blurb,
+li.series.blurb,
+li.work.blurb,
+li.bookmark.blurb,
+li.mystery.blurb {
+  border-image: none !important;
+  background-color: #fdfaec !important;
+  background: #fdfaec !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 15px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0px 4px 10px rgba(87, 49, 13, 0.1) !important;
+}
+
+li.blurb .header,
+li.series .header,
+li.work .header {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+}
