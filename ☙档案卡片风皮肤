@@ -1,3 +1,17 @@
+/* === Archive Card – AO3 Skin (iOS zoom-friendly optimized) ===
+   Changes:
+   - Allow iOS text scaling by removing forced text-size-adjust:100% !important
+   - Replace a few fixed px font sizes with rem-based variables so browser font scaling behaves consistently
+   - (Optional) iOS-only form-field override to avoid focus-zoom when font-size < 16px
+*/
+
+:root {
+  --ac-font-12: 0.75rem;   /* 12px at 16px base */
+  --ac-font-11: 0.6875rem; /* 11px */
+  --ac-font-10: 0.625rem;  /* 10px */
+  --ac-lh-16: 1.333em;     /* 16px line-height when paired with 12px font-size */
+}
+
 Body,
 #outer,
 #main {
@@ -528,7 +542,7 @@ h5.fandoms.heading a.tag {
   text-decoration: none !important;
   display: block !important;
   width: auto !important;
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
   font-weight: normal !important;
   line-height: 1.4 !important;
   margin-top: 2px !important;
@@ -793,7 +807,7 @@ dl.work.meta > dt {
 dl.work.meta > dt::before {
   font-family: "Garamond", "Baskerville", serif !important;
   font-weight: bold !important;
-  font-size: 11px !important;
+  font-size: var(--ac-font-11) !important;
   line-height: 1.4 !important;
   display: block !important;
 }
@@ -855,7 +869,7 @@ dl.work.meta dd a.tag {
   margin: 1px 3px !important;
   padding: 0px 4px !important;
   font-family: "Garamond", serif !important;
-  font-size: 11px !important;
+  font-size: var(--ac-font-11) !important;
   text-decoration: none !important;
   background: transparent !important;
   border-bottom: 1px solid transparent !important;
@@ -869,7 +883,7 @@ dl.work.meta dd a.tag:hover {
 }
 
 dl.work.meta dd.fandom a.tag {
-  font-size: 11px !important;
+  font-size: var(--ac-font-11) !important;
   font-weight: bold !important;
 }
 
@@ -910,7 +924,7 @@ dl.work.meta dd.series a {
   width: 100% !important;
   box-sizing: border-box !important;
   font-family: "Courier Prime", "Courier New", Courier, monospace !important;
-  font-size: 11px !important;
+  font-size: var(--ac-font-11) !important;
   color: #667583 !important;
 }
 
@@ -968,7 +982,7 @@ li.bookmark.blurb dl.stats {
   text-align: right;
   margin: 0.8em 0.5em 0.1em 0;
   font-family: "Courier Prime", "Courier New", Courier, monospace;
-  font-size: 10px;
+  font-size: var(--ac-font-10);
   letter-spacing: 0.01em;
   line-height: 1.4;
   color: #667583;
@@ -1711,13 +1725,13 @@ li.bookmark.blurb ul.tags li a.tag {
 #header #search .text {
   width: 130px !important;
   height: 16px !important;
-  font-size: 11px !important;
+  font-size: var(--ac-font-11) !important;
   border: none !important;
   border-radius: 10px !important;
   padding: 1px 8px !important;
   margin: 0 5px 0 0 !important;
   position: static !important;
-  line-height: 16px !important;
+  line-height: var(--ac-lh-16) !important;
 }
 
 #header #search .button {
@@ -3331,7 +3345,7 @@ li.mystery .header .mods {
 }
 
 html body #main ul.navigation.actions {
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
 }
 
 html body #main ul.navigation.actions > li > a,
@@ -3346,7 +3360,7 @@ html body #main ul.navigation.actions > li > form > button {
 
 html body.works-show #workskin ul.actions,
 html body.chapters-show #workskin ul.actions {
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
 }
 
 html body.works-show #workskin ul.actions > li > a,
@@ -3382,7 +3396,7 @@ html body #main ul.navigation.actions > li > a,
 html body #main ul.navigation.actions > li > span,
 html body #main ul.navigation.actions > li > span.current {
   display: inline-block !important;
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
   line-height: 1.2 !important;
   padding: 0.15em 0.25em 0.2em !important;
   white-space: nowrap !important;
@@ -3424,7 +3438,7 @@ html body form.filters textarea {
   box-sizing: border-box !important;
   width: 100% !important;
   max-width: 100% !important;
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
   line-height: 1.4 !important;
   padding: 0.55em 0.75em !important;
   min-height: 2.2em !important;
@@ -3443,7 +3457,7 @@ html body form.filters dd {
 
 html body form.filters .actions input[type="submit"],
 html body form.filters input[type="submit"] {
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
   line-height: 1.2 !important;
   padding: 0.35em 0.9em !important;
   min-height: 2em !important;
@@ -3455,16 +3469,16 @@ html body #main ul.navigation.actions li.bookmark a.bookmark_form_placement_clos
 
 html,
 body {
-  -webkit-text-size-adjust: 100% !important;
-  text-size-adjust: 100% !important;
+  /* Allow iOS (Chrome/Edge/Safari) text scaling & accessibility settings */
+  -webkit-text-size-adjust: auto;
+  text-size-adjust: auto;
 }
-
 #main ul.navigation.actions a,
 #main ul.navigation.actions button,
 #main ul.navigation.actions input[type="submit"] {
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
-  font-size: 12px !important;
-  line-height: 16px !important;
+  font-size: var(--ac-font-12) !important;
+  line-height: var(--ac-lh-16) !important;
 }
 
 #main ul.navigation.actions button,
@@ -3776,7 +3790,7 @@ body[class*="collection"] #main dl.index {
   border-radius: 10px !important;
   padding: 0.55em 0.8em !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
   box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
   -webkit-appearance: none !important;
   appearance: none !important;
@@ -3796,7 +3810,7 @@ body[class*="collection"] #main dl.index {
   border-bottom: 1px solid transparent !important;
   color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
-  font-size: 12px !important;
+  font-size: var(--ac-font-12) !important;
   font-variant: small-caps !important;
   letter-spacing: 0.08em !important;
   padding: 0.2em 0.6em !important;
@@ -4122,7 +4136,7 @@ li.chapter .secondary input[type="submit"] {
   text-align: right !important;
   margin: 0.8em 0.5em 0.1em 0 !important;
   font-family: "Courier Prime","Courier New",Courier,monospace !important;
-  font-size: 10px !important;
+  font-size: var(--ac-font-10) !important;
   letter-spacing: 0.01em !important;
   line-height: 1.4 !important;
   color: #667583 !important;
@@ -4236,7 +4250,7 @@ li.chapter .secondary input[type="submit"] {
   padding: 4px 10px !important;
   margin-top: 6px !important;
   color: #667583 !important;
-  font-size: 11px !important;
+  font-size: var(--ac-font-11) !important;
   line-height: 1.2 !important;
   font-family: "Courier Prime","Courier New",monospace !important;
 }
