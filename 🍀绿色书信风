@@ -896,11 +896,6 @@ span.unread {
   box-shadow: 0px 0px 5px rgba(237, 218, 188, 0.15) !important;
 }
 
-h2.collections {
-  box-shadow: 0px 0px 10px rgba(237, 218, 188, 0.2) !important;
-  border-radius: 8px !important;
-}
-
 #stat_chart svg rect:first-of-type {
   filter: opacity(0%);
   border-radius: 8px !important;
@@ -2288,4 +2283,97 @@ li.work .header {
   background: transparent !important;
   border: none !important;
   border-bottom: none !important;
+}
+
+#main .splash .module h3,
+#main .splash .module h3.heading {
+  color: #57310D !important;
+}
+
+#main .splash .browse li a:before,
+#main .splash .browse li a::before {
+  color: #57310D !important;
+}
+
+#main .collection span.landmark ~ a.tag {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #57310D !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  text-decoration: none !important;
+  transition: color .15s ease;
+}
+
+#main .collection span.landmark ~ a.tag:hover,
+#main .collection span.landmark ~ a.tag:focus,
+#main .collection span.landmark ~ a.tag:focus-visible {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #606B1B !important;
+  outline: none !important;
+}
+
+#main .blurb h5.fandoms a.tag {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #57310D !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  text-decoration: none !important;
+  transition: color .15s ease;
+}
+
+#main .blurb h5.fandoms a.tag:hover,
+#main .blurb h5.fandoms a.tag:focus,
+#main .blurb h5.fandoms a.tag:focus-visible {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #606B1B !important;
+  outline: none !important;
+}
+
+.tags-show .primary ul.tags a:hover,
+.tags-show .primary ul li a:hover,
+.tags-show .parent a:hover,
+.tags-show .synonym a:hover,
+.tags-show .merger a:hover {
+  color: #8E9E29 !important;
+  background-color: transparent !important;
+  border: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.tags-show .meta a:hover,
+.tags-show .sub a:hover {
+  color: #8E9E29 !important;
+  background-color: transparent !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+h2.collections,
+#main h2.collections,
+body.collections #main h2.collections {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  color: #57310D !important;
+}
+
+.listbox li.blurb,
+li.pseud.blurb,
+#main li.pseud.blurb {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.pseud .icon {
+  border: none !important;
 }
