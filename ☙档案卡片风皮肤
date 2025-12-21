@@ -4778,3 +4778,27 @@ ul.tags li a.tag:active {
   border: none !important;
   background: transparent !important;
 }
+
+#main .splash .favorite li,
+#main .splash .browse li {
+  color: #4682B4 !important;
+}
+
+#main .splash .favorite li a,
+#main .splash .browse li a {
+  color: #4682B4 !important;
+}
+
+#main .splash .favorite li a:hover,
+#main .splash .browse li a:hover {
+  color: #769DAD !important;
+}
+
+#main .splash .favorite li::marker,
+#main .splash .browse li::marker,
+#main .splash .favorite li::before,
+#main .splash .browse li::before,
+#main .splash .favorite li a::before,
+#main .splash .browse li a::before {
+  color: #4682B4 !important;
+}
