@@ -1894,3 +1894,13 @@ textarea:focus,
 @media (min-width: 900px){
   #main{ max-width: 1200px !important; } /* 1200/1300/1400 你自己试手感 */
 }
+
+#main .splash .module h3,
+#main .splash .module h3.heading {
+  color: #57310D !important;
+}
+
+#main .splash .browse li a:before,
+#main .splash .browse li a::before {
+  color: #57310D !important;
+}
