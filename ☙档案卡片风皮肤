@@ -4802,3 +4802,13 @@ ul.tags li a.tag:active {
 #main .splash .browse li a::before {
   color: #4682B4 !important;
 }
+
+.thread {
+  margin-left: 1.5em !important;
+  padding-left: 0.8em !important;
+}
+
+.thread .thread {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
