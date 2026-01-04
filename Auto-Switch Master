@@ -1,0 +1,13 @@
+::selection {
+  background: #629695 !important;
+  color: #FFFFFF !important;
+}
+
+::-moz-selection {
+  background: #629695 !important;
+  color: #FFFFFF !important;
+}
+
+body {
+  background: transparent;
+}
