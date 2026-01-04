@@ -2085,8 +2085,9 @@ ol.comment.index.group .unread {
 }
 
 .thread li.comment {
-  background: rgba(252, 250, 246, 0.8) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+  background: #31463D !important;
+  border: 1px solid #22322C !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
   margin: 1em 0 !important;
   padding: 1.2em 1em !important;
 }
