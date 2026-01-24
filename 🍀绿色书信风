@@ -1860,15 +1860,6 @@ textarea:focus,
   padding: 10px 15px !important;
 }
 
-#main {
-  color: #57310D;
-  max-width: 900px !important;
-  margin: 0 auto 0 auto !important;
-  padding: 10px 10px !important;
-  box-sizing: border-box;
-  background: transparent !important;
-}
-
 #workskin {
   border: 25px solid transparent;
   border-image: url("https://64.media.tumblr.com/8ac3074f2da62f4400ccb90b0578a106/f216e3ec9416b1a9-7b/s2048x3072/451a9313a082c3a5fa501943e54c5ba2f072a10b.png") 15% round;
