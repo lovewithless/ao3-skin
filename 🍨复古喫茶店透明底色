@@ -59,15 +59,6 @@ body::after {
   z-index: -1;
 }
 
-#main {
-  color: #57310D;
-  max-width: 900px !important;
-  margin: 0 auto 0 auto !important;
-  padding: 10px 10px !important;
-  box-sizing: border-box;
-  background: transparent !important;
-}
-
 #main a {
   color: #57310D;
 }
@@ -1889,10 +1880,6 @@ textarea:focus,
 .statistics.modal .stats dl dt {
   visibility: visible !important;
   display: block !important;
-}
-
-@media (min-width: 900px){
-  #main{ max-width: 1200px !important; } /* 1200/1300/1400 你自己试手感 */
 }
 
 #main .splash .module h3,
