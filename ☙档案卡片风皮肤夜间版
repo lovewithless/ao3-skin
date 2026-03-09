@@ -4920,3 +4920,30 @@ dl.work.meta > dt,
   color: #76d2a8 !important;
   opacity: 0.7 !important;
 }
+
+#main form fieldset,
+#main fieldset,
+#main fieldset fieldset,
+#main #preview,
+#main #preview .wrapper,
+#main .own,
+#main .secondary,
+#main .secondary form {
+  background: #31463D !important;
+  border: 1px solid #22322C !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
+              0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 10px !important;
+}
+#main .work {
+  background: #31463D !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input[type="text"],
+input[type="search"] {
+  color: #EFEDE3 !important;
+  -webkit-text-fill-color: #EFEDE3 !important;
+}
