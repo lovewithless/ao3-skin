@@ -4828,11 +4828,3 @@ ul.tags li a.tag:active {
   border-radius: 10px !important;
   color: #2C3E50 !important;
 }
-
-#main .work {
-  background: #FAF7F0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  color: #2C3E50 !important;
-}
