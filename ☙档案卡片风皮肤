@@ -4828,3 +4828,21 @@ ul.tags li a.tag:active {
   border-radius: 10px !important;
   color: #2C3E50 !important;
 }
+
+#main #preview .wrapper,
+#main #preview .userstuff {
+  background-color: #FAF7F0 !important;
+  color: #2C3E50 !important;
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  box-shadow: 0px 8px 24px rgba(63, 42, 82, 0.06) !important;
+}
+
+#main .work-wrapper,
+#main #workskin,
+#main .work {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
