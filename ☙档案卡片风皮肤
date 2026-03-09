@@ -4812,3 +4812,27 @@ ul.tags li a.tag:active {
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
+
+#main form fieldset,
+#main fieldset,
+#main fieldset fieldset,
+#main #preview,
+#main #preview .wrapper,
+#main .own,
+#main .secondary,
+#main .secondary form {
+  background: #FCFAF6 !important;
+  border: 1px solid #D4E0E7 !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
+              0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 10px !important;
+  color: #2C3E50 !important;
+}
+
+#main .work {
+  background: #FAF7F0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #2C3E50 !important;
+}
