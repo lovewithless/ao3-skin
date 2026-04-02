@@ -1,15 +1,8 @@
-/* === Archive Card – AO3 Skin (iOS zoom-friendly optimized) ===
-   Changes:
-   - Allow iOS text scaling by removing forced text-size-adjust:100% !important
-   - Replace a few fixed px font sizes with rem-based variables so browser font scaling behaves consistently
-   - (Optional) iOS-only form-field override to avoid focus-zoom when font-size < 16px
-*/
-
 :root {
-  --ac-font-12: 0.75rem;   /* 12px at 16px base */
-  --ac-font-11: 0.6875rem; /* 11px */
-  --ac-font-10: 0.625rem;  /* 10px */
-  --ac-lh-16: 1.333em;     /* 16px line-height when paired with 12px font-size */
+  --ac-font-12: 0.75rem;
+  --ac-font-11: 0.6875rem;
+  --ac-font-10: 0.625rem;
+  --ac-lh-16: 1.333em;
 }
 
 Body,
@@ -3469,10 +3462,10 @@ html body #main ul.navigation.actions li.bookmark a.bookmark_form_placement_clos
 
 html,
 body {
-  /* Allow iOS (Chrome/Edge/Safari) text scaling & accessibility settings */
   -webkit-text-size-adjust: auto;
   text-size-adjust: auto;
 }
+
 #main ul.navigation.actions a,
 #main ul.navigation.actions button,
 #main ul.navigation.actions input[type="submit"] {
@@ -4845,4 +4838,619 @@ ul.tags li a.tag:active {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+}
+
+#main form#new_bookmark,
+#main form[id^="edit_bookmark"],
+#main div.dynamic,
+#main #bookmark-form,
+#main #bookmark_form,
+#main #bookmark-form.dynamic,
+#main #bookmark_form.dynamic,
+#bookmark-form,
+#bookmark_form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+#main div.dynamic:empty,
+#main #bookmark-form.dynamic:empty,
+#main #bookmark_form.dynamic:empty {
+  display: none !important;
+}
+
+#main form#new_bookmark .wrapper,
+#main form#new_bookmark fieldset,
+#main form#new_bookmark dl,
+#main form#new_bookmark dt,
+#main form#new_bookmark dd,
+#main form[id^="edit_bookmark"] .wrapper,
+#main form[id^="edit_bookmark"] fieldset,
+#main form[id^="edit_bookmark"] dl,
+#main form[id^="edit_bookmark"] dt,
+#main form[id^="edit_bookmark"] dd,
+#main #bookmark-form .wrapper,
+#main #bookmark-form fieldset,
+#main #bookmark-form dl,
+#main #bookmark-form dt,
+#main #bookmark-form dd,
+#main #bookmark_form .wrapper,
+#main #bookmark_form fieldset,
+#main #bookmark_form dl,
+#main #bookmark_form dt,
+#main #bookmark_form dd,
+#bookmark-form .wrapper,
+#bookmark-form fieldset,
+#bookmark-form dl,
+#bookmark-form dt,
+#bookmark-form dd,
+#bookmark_form .wrapper,
+#bookmark_form fieldset,
+#bookmark_form dl,
+#bookmark_form dt,
+#bookmark_form dd {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#main #bookmark-form,
+#main #bookmark_form,
+#main #bookmark-form label,
+#main #bookmark_form label,
+#main #bookmark-form p,
+#main #bookmark_form p,
+#main #bookmark-form .footnote,
+#main #bookmark_form .footnote,
+#main #bookmark-form .character_counter,
+#main #bookmark_form .character_counter {
+  color: #2C3E50 !important;
+  background: transparent !important;
+}
+
+#main form.bookmark input[type="text"],
+#main form.bookmark input[type="url"],
+#main form.bookmark input[type="email"],
+#main form.bookmark input[type="search"],
+#main form.bookmark textarea,
+#main #bookmark-form input[type="text"],
+#main #bookmark-form input[type="url"],
+#main #bookmark-form input[type="email"],
+#main #bookmark-form input[type="search"],
+#main #bookmark-form textarea,
+#main #bookmark_form input[type="text"],
+#main #bookmark_form input[type="url"],
+#main #bookmark_form input[type="email"],
+#main #bookmark_form input[type="search"],
+#main #bookmark_form textarea,
+#bookmark-form input[type="text"],
+#bookmark-form input[type="url"],
+#bookmark-form input[type="email"],
+#bookmark-form input[type="search"],
+#bookmark-form textarea,
+#bookmark_form input[type="text"],
+#bookmark_form input[type="url"],
+#bookmark_form input[type="email"],
+#bookmark_form input[type="search"],
+#bookmark_form textarea {
+  background: #FAF7F0 !important;
+  color: #2C3E50 !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  padding: 0.65em 0.85em !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
+}
+
+#main form.bookmark textarea,
+#main #bookmark-form textarea,
+#main #bookmark_form textarea,
+#bookmark-form textarea,
+#bookmark_form textarea {
+  min-height: 12em !important;
+}
+
+#main form.bookmark input[type="text"]:focus,
+#main form.bookmark input[type="url"]:focus,
+#main form.bookmark input[type="email"]:focus,
+#main form.bookmark input[type="search"]:focus,
+#main form.bookmark textarea:focus,
+#main #bookmark-form input[type="text"]:focus,
+#main #bookmark-form input[type="url"]:focus,
+#main #bookmark-form input[type="email"]:focus,
+#main #bookmark-form input[type="search"]:focus,
+#main #bookmark-form textarea:focus,
+#main #bookmark_form input[type="text"]:focus,
+#main #bookmark_form input[type="url"]:focus,
+#main #bookmark_form input[type="email"]:focus,
+#main #bookmark_form input[type="search"]:focus,
+#main #bookmark_form textarea:focus,
+#bookmark-form input[type="text"]:focus,
+#bookmark-form input[type="url"]:focus,
+#bookmark-form input[type="email"]:focus,
+#bookmark-form input[type="search"]:focus,
+#bookmark-form textarea:focus,
+#bookmark_form input[type="text"]:focus,
+#bookmark_form input[type="url"]:focus,
+#bookmark_form input[type="email"]:focus,
+#bookmark_form input[type="search"]:focus,
+#bookmark_form textarea:focus {
+  background: #FCFAF6 !important;
+  border-color: #769DAD !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#main form.bookmark .actions,
+#main #bookmark-form .actions,
+#main #bookmark_form .actions,
+#bookmark-form .actions,
+#bookmark_form .actions {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main form.bookmark .actions a,
+#main form.bookmark .actions input,
+#main form.bookmark .actions button,
+#main #bookmark-form .actions a,
+#main #bookmark-form .actions input,
+#main #bookmark-form .actions button,
+#main #bookmark_form .actions a,
+#main #bookmark_form .actions input,
+#main #bookmark_form .actions button,
+#bookmark-form .actions a,
+#bookmark-form .actions input,
+#bookmark-form .actions button,
+#bookmark_form .actions a,
+#bookmark_form .actions input,
+#bookmark_form .actions button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
+  font-size: 0.85em !important;
+  letter-spacing: 0.08em !important;
+  font-variant: small-caps !important;
+  text-decoration: none !important;
+  padding: 0 0 2px 0 !important;
+  margin: 0 0.35em 0 0 !important;
+  border-bottom: 1px solid transparent !important;
+  cursor: pointer !important;
+}
+
+#main form.bookmark .actions a:hover,
+#main form.bookmark .actions input:hover,
+#main form.bookmark .actions button:hover,
+#main #bookmark-form .actions a:hover,
+#main #bookmark-form .actions input:hover,
+#main #bookmark-form .actions button:hover,
+#main #bookmark_form .actions a:hover,
+#main #bookmark_form .actions input:hover,
+#main #bookmark_form .actions button:hover,
+#bookmark-form .actions a:hover,
+#bookmark-form .actions input:hover,
+#bookmark-form .actions button:hover,
+#bookmark_form .actions a:hover,
+#bookmark_form .actions input:hover,
+#bookmark_form .actions button:hover,
+#main form.bookmark .actions a:focus,
+#main form.bookmark .actions input:focus,
+#main form.bookmark .actions button:focus,
+#main #bookmark-form .actions a:focus,
+#main #bookmark-form .actions input:focus,
+#main #bookmark-form .actions button:focus,
+#main #bookmark_form .actions a:focus,
+#main #bookmark_form .actions input:focus,
+#main #bookmark_form .actions button:focus,
+#bookmark-form .actions a:focus,
+#bookmark-form .actions input:focus,
+#bookmark-form .actions button:focus,
+#bookmark_form .actions a:focus,
+#bookmark_form .actions input:focus,
+#bookmark_form .actions button:focus {
+  color: #4682B4 !important;
+  border-bottom-color: #769DAD !important;
+  outline: none !important;
+}
+
+#dashboard .bookmark.blurb .actions,
+#dashboard.own .bookmark.blurb .actions,
+#main .bookmark.blurb .actions {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#dashboard .bookmark.blurb .actions a,
+#dashboard .bookmark.blurb .action,
+#dashboard.own .bookmark.blurb .actions a,
+#dashboard.own .bookmark.blurb .action,
+#main .bookmark.blurb .actions a,
+#main .bookmark.blurb .action {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
+  font-size: 0.85em !important;
+  letter-spacing: 0.08em !important;
+  font-variant: small-caps !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+#dashboard .bookmark.blurb .actions a:hover,
+#dashboard .bookmark.blurb .actions a:focus,
+#dashboard .bookmark.blurb .action:hover,
+#dashboard .bookmark.blurb .action:focus,
+#dashboard.own .bookmark.blurb .actions a:hover,
+#dashboard.own .bookmark.blurb .actions a:focus,
+#dashboard.own .bookmark.blurb .action:hover,
+#dashboard.own .bookmark.blurb .action:focus,
+#main .bookmark.blurb .actions a:hover,
+#main .bookmark.blurb .actions a:focus,
+#main .bookmark.blurb .action:hover,
+#main .bookmark.blurb .action:focus {
+  color: #4682B4 !important;
+  border-bottom-color: #769DAD !important;
+  background: transparent !important;
+}
+
+#main li.bookmark.blurb .own,
+#main li.bookmark.blurb form dl {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+#main li.bookmark.blurb .own ul.actions,
+#main li.bookmark.blurb .own ul.actions li,
+#main li.bookmark.blurb .own ul.actions form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main li.comment.group ul.actions li,
+html body #main li.unread.comment.group ul.actions li,
+html body #dashboard li.comment.group ul.actions li,
+html body #dashboard li.unread.comment.group ul.actions li {
+  display: inline-block !important;
+  margin-right: 10px !important;
+  vertical-align: middle !important;
+}
+
+html body #main li.comment.group ul.actions label,
+html body #main li.unread.comment.group ul.actions label,
+html body #dashboard li.comment.group ul.actions label,
+html body #dashboard li.unread.comment.group ul.actions label {
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 12px !important;
+  background: rgba(252, 250, 246, 0.88) !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
+  line-height: 1.2 !important;
+}
+
+html body #main li.comment.group ul.actions input[type="checkbox"],
+html body #main li.unread.comment.group ul.actions input[type="checkbox"],
+html body #dashboard li.comment.group ul.actions input[type="checkbox"],
+html body #dashboard li.unread.comment.group ul.actions input[type="checkbox"] {
+  accent-color: #4682B4 !important;
+  vertical-align: middle !important;
+  margin-right: 6px !important;
+  transform: scale(1.08) !important;
+}
+
+html body #main li.comment.group ul.actions label:hover,
+html body #main li.unread.comment.group ul.actions label:hover,
+html body #dashboard li.comment.group ul.actions label:hover,
+html body #dashboard li.unread.comment.group ul.actions label:hover {
+  background: rgba(212, 224, 231, 0.35) !important;
+  border-color: #769DAD !important;
+  color: #4682B4 !important;
+  -webkit-text-fill-color: #4682B4 !important;
+}
+
+html body #main form[action*="/faq"],
+html body #main form[action*="/faqs"],
+html body.faq #main form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 0 14px 0 !important;
+  padding: 0 !important;
+}
+
+html body #main form[action*="/faq"] label,
+html body #main form[action*="/faqs"] label,
+html body.faq #main form label {
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  margin: 0 8px 0 0 !important;
+  background: rgba(252, 250, 246, 0.88) !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
+}
+
+html body #main form[action*="/faq"] select,
+html body #main form[action*="/faqs"] select,
+html body.faq #main form select {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  min-width: 140px !important;
+  padding: 6px 10px !important;
+  background: rgba(250, 247, 240, 0.95) !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
+}
+
+html body #main form[action*="/faq"] input[type="submit"],
+html body #main form[action*="/faq"] button,
+html body #main form[action*="/faqs"] input[type="submit"],
+html body #main form[action*="/faqs"] button,
+html body.faq #main form input[type="submit"],
+html body.faq #main form button {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-left: 8px !important;
+  padding: 6px 12px !important;
+  background: rgba(252, 250, 246, 0.88) !important;
+  border: 1px solid #AEC6CF !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
+  text-decoration: none !important;
+}
+
+html body #main form[action*="/faq"] input[type="submit"]:hover,
+html body #main form[action*="/faq"] button:hover,
+html body #main form[action*="/faqs"] input[type="submit"]:hover,
+html body #main form[action*="/faqs"] button:hover,
+html body.faq #main form input[type="submit"]:hover,
+html body.faq #main form button:hover {
+  background: rgba(212, 224, 231, 0.35) !important;
+  border-color: #769DAD !important;
+  color: #4682B4 !important;
+  -webkit-text-fill-color: #4682B4 !important;
+}
+
+#main li.series.blurb .header.module,
+#dashboard li.series.blurb .header.module {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  position: relative !important;
+  padding-top: 0px !important;
+}
+
+#main li.series.blurb .header.module h4.heading,
+#dashboard li.series.blurb .header.module h4.heading {
+  font-size: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  order: 1 !important;
+}
+
+#main li.series.blurb .header.module h4.heading a:first-of-type,
+#dashboard li.series.blurb .header.module h4.heading a:first-of-type {
+  display: block !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  margin-bottom: 2px !important;
+}
+
+#main li.series.blurb .header.module h4.heading a[rel="author"] {
+  display: block !important;
+  font-size: 1rem !important;
+  margin-bottom: 0 !important;
+}
+
+#main li.series.blurb .header.module .datetime,
+#dashboard li.series.blurb .header.module .datetime {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 4px 0 !important;
+  float: none !important;
+  order: 2 !important;
+  color: #78909c !important;
+}
+
+#main li.series.blurb .header.module ul.required-tags,
+#dashboard li.series.blurb .header.module ul.required-tags {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 4px 0 !important;
+  padding: 0 !important;
+  order: 3 !important;
+}
+
+#main li.series.blurb .header.module ul.required-tags li,
+#dashboard li.series.blurb .header.module ul.required-tags li {
+  display: inline-block !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#main li.series.blurb ul.required-tags li + li::before {
+  vertical-align: middle !important;
+  margin: 0 4px !important;
+  color: #AEC6CF !important;
+}
+
+#main li.series.blurb .header.module h5.fandoms.heading,
+#dashboard li.series.blurb .header.module h5.fandoms.heading {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 4px 0 0 0 !important;
+  order: 4 !important;
+}
+
+#main li.user.short.blurb.group p.status,
+#dashboard li.user.short.blurb.group p.status {
+  display: none !important;
+}
+
+html body #main li.user.short.blurb.group {
+  background-color: rgba(252, 250, 246, 0.82) !important;
+  border: none !important;
+  border-bottom: none !important;
+  border-radius: 12px !important;
+  margin-bottom: 10px !important;
+  padding: 12px 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.9) !important;
+  border-left: 1px solid rgba(212, 224, 231, 0.7) !important;
+  color: #2C3E50 !important;
+}
+
+#main li.series.blurb,
+#dashboard li.series.blurb {
+  position: relative !important;
+  z-index: 0 !important;
+  background-color: #FCFAF6 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
+              0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  padding: 2.4em 3.2em 2.2em 3.2em !important;
+  margin: 0 0 24px 0 !important;
+  overflow: hidden !important;
+}
+
+#main li.series.blurb::before,
+#dashboard li.series.blurb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background-image: url("https://64.media.tumblr.com/02df4ca4c275874f51dd542f3e9d3f36/6ef867351823b347-af/s2048x3072/242157e25a0112ea21902a45df3787300d80c6cf.png"),
+    url("https://64.media.tumblr.com/7d658d33d770de4a6c60354b7e05c76c/cfb02486730c869a-eb/s2048x3072/f5b15d757b886b7cb31cbcc7797f89f730033111.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  background-size: 85px auto, 85px auto;
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg) brightness(85%) contrast(90%);
+}
+
+#main li.series.blurb > *,
+#dashboard li.series.blurb > * {
+  position: relative;
+  z-index: 1;
+}
+
+#main li.series.blurb dl.stats,
+#dashboard li.series.blurb dl.stats {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  margin: 0.9em 0 0.1em 0 !important;
+  padding: 0 !important;
+  font-family: "Courier Prime", "Courier New", Courier, monospace !important;
+  font-size: 0.6875rem !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.5 !important;
+  color: #667583 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+#main li.series.blurb dl.stats dt,
+#dashboard li.series.blurb dl.stats dt {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+#main li.series.blurb dl.stats dd,
+#dashboard li.series.blurb dl.stats dd {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  border: none !important;
+  color: #667583 !important;
+}
+
+#main li.series.blurb dl.stats dd.words::before,
+#dashboard li.series.blurb dl.stats dd.words::before {
+  content: "Words " !important;
+  font-weight: 600 !important;
+  color: #3f4e5a !important;
+}
+
+#main li.series.blurb dl.stats dd.works::before,
+#dashboard li.series.blurb dl.stats dd.works::before {
+  content: "Works " !important;
+  font-weight: 600 !important;
+  color: #3f4e5a !important;
+}
+
+#main li.series.blurb dl.stats dd.bookmarks::before,
+#dashboard li.series.blurb dl.stats dd.bookmarks::before {
+  content: "Bookmarks " !important;
+  font-weight: 600 !important;
+  color: #3f4e5a !important;
+}
+
+#main li.series.blurb dl.stats dd:not(:last-child)::after,
+#dashboard li.series.blurb dl.stats dd:not(:last-child)::after {
+  content: " · " !important;
+  color: #9aa8b5 !important;
+}
+
+#main li.series.blurb dl.stats dd.bookmarks::before,
+#dashboard li.series.blurb dl.stats dd.bookmarks::before,
+#main .series.blurb dl.stats dd.bookmarks::before,
+#dashboard .series.blurb dl.stats dd.bookmarks::before {
+  content: "Bookmarks " !important;
+  font-weight: 600 !important;
+  color: #3f4e5a !important;
 }
