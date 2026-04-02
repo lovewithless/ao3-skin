@@ -8,13 +8,13 @@
 Body,
 #outer,
 #main {
-  background: #2A3B34 !important;
-  color: #E7E3D8;
+  background: #FAF7F0 !important;
+  color: #2C3E50;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif;
 }
 
 #main a {
-  color: #8FC6B5;
+  color: #4682B4;
 }
 
 body.works-show #outer,
@@ -52,7 +52,7 @@ body.chapters-show #main {
 .bookmark.blurb {
   position: relative !important;
   z-index: 0 !important;
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border-radius: 8px !important;
   border: none !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -77,7 +77,7 @@ body.chapters-show #main {
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
   background-size: 85px auto, 85px auto;
-  filter: invert(25%) sepia(60%) saturate(320%)  hue-rotate(120deg) brightness(82%) contrast(90%);
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg) brightness(85%) contrast(90%);
 }
 
 .work.blurb > *,
@@ -132,7 +132,7 @@ body.chapters-show #main {
 .bookmark.blurb .header h4.heading a:first-of-type {
   font-size: 1.0rem !important;
   font-weight: bold !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   margin-bottom: 4px !important;
 }
 
@@ -198,7 +198,7 @@ li.bookmark.blurb > .header > ul.required-tags {
   position: static !important;
   margin: 0.5em 0 0.5em 0 !important;
   padding: 0.6em 0 0 0 !important;
-  border-top: 1px solid #22322C;
+  border-top: 1px solid #D4E0E7;
   text-align: center !important;
 }
 
@@ -313,7 +313,7 @@ li.bookmark.blurb > .header > ul.required-tags {
 .blurb ul.required-tags li + li::before {
   content: " ❦ ";
   font-size: 0.8em;
-  color: #2C4037;
+  color: #cfd8dc;
   margin-right: 0.25em;
   display: inline-block;
   font-style: normal !important;
@@ -321,18 +321,18 @@ li.bookmark.blurb > .header > ul.required-tags {
 
 .blurb ul.required-tags li:hover,
 .blurb ul.required-tags li *:hover {
-  color: #E7E3D8 !important;
+  color: #000000 !important;
   cursor: help !important;
 }
 
 #header {
-  background-color: #2A3B34 !important;
+  background-color: #FAF7F0 !important;
   background-image: none !important;
   border-bottom: none !important;
 }
 
 #header .heading {
-  background-color: #2A3B34 !important;
+  background-color: #FAF7F0 !important;
   background-image: none !important;
 }
 
@@ -360,9 +360,9 @@ li.bookmark.blurb > .header > ul.required-tags {
 }
 
 #header input {
-  background: #25352F !important;
+  background: #FFFFFF !important;
   border: none !important;
-  color: #E7E3D8;
+  color: #2C3E50;
   border-radius: 999px !important;
 }
 
@@ -376,9 +376,9 @@ li.bookmark.blurb > .header > ul.required-tags {
 .menu,
 body .dropdown-menu,
 body .menu {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   background-image: none !important;
-  border: 1px solid #A8D2C1 !important;
+  border: 1px solid #769DAD !important;
   border-radius: 10px !important;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
   min-width: 150px !important;
@@ -407,8 +407,8 @@ body .menu {
   background-position: center center !important;
   background-size: contain !important;
   opacity: 0.9;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%) !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 #footer .dropdown-menu::after,
@@ -452,7 +452,7 @@ ul.tags li a.tag:visited {
   white-space: normal !important;
   text-decoration: none !important;
   letter-spacing: 0.03em;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
@@ -461,12 +461,12 @@ ul.tags li.warnings a.tag,
 ul.tags li.relationships a.tag,
 ul.tags li.characters a.tag,
 ul.tags li.freeforms a.tag {
-  color: #A8D2C1 !important;
+  color: #264A73 !important;
 }
 
 dd.rating a.tag,
 dd.category a.tag {
-  color: #8FC6B5 !important;
+  color: #1565c0 !important;
   background: transparent !important;
   border: none !important;
 }
@@ -491,37 +491,37 @@ li.relationships + li.freeforms::before {
 
 ul.tags li.warnings:first-child::before {
   content: "❧ Archive Warnings ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 li.warnings + li.relationships::before {
   content: "❧ Relationships ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 li.relationships + li.characters::before {
   content: "❧ Characters ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 li.characters + li.freeforms::before {
   content: "❧ Additional Tags ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 li.warnings + li.characters::before {
   content: "❧ Characters ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 li.warnings + li.freeforms::before {
   content: "❧ Additional Tags ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 li.relationships + li.freeforms::before {
   content: "❧ Additional Tags ❧";
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 h5.fandoms.heading a.tag {
@@ -529,7 +529,7 @@ h5.fandoms.heading a.tag {
   border: none !important;
   box-shadow: none !important;
   padding: 0 0.25em !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
   font-style: normal !important;
   text-decoration: none !important;
@@ -548,7 +548,7 @@ ul.tags li a.tag:active,
 h5.fandoms.heading a.tag:hover,
 h5.fandoms.heading a.tag:focus,
 h5.fandoms.heading a.tag:active {
-  color: #E7E3D8 !important;
+  color: #000000 !important;
   background: transparent !important;
   background-color: transparent !important;
   border-color: transparent !important;
@@ -596,7 +596,7 @@ h5.fandoms.heading a.tag:active {
 #main ol.pagination li a:hover,
 #main ol.pagination li a:focus {
   background: transparent !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   border-color: transparent !important;
   border-bottom: 0 !important;
 }
@@ -605,7 +605,7 @@ h5.fandoms.heading a.tag:active {
 #main ol.pagination li span.current,
 #main ol.pagination li a.current,
 .pagination .current {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-weight: 700 !important;
   position: relative;
 }
@@ -624,7 +624,7 @@ h5.fandoms.heading a.tag:active {
   transform: translateX(-50%);
   width: 1.1em;
   height: 1px;
-  background: #E7E3D8;
+  background: #2C3E50;
   opacity: 0.55;
 }
 
@@ -668,28 +668,28 @@ fieldset fieldset.listbox,
 .thread .even,
 .unread,
 .own {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   box-shadow: 2px 2px 5px rgba(118,157,173,0.1);
   border-radius: 10px !important;
   margin-bottom: 15px !important;
 }
 
 #footer {
-  background: #A8D2C1 !important;
-  border-top: 5px solid #22322C;
+  background: #769DAD !important;
+  border-top: 5px solid #AEC6CF;
 }
 
 #footer .heading,
 #footer a {
   background: transparent;
-  color: #25352F;
+  color: #EFF3F5;
   text-shadow: none;
 }
 
 .splash .favorite li:nth-of-type(odd) a {
-  background: #22322C;
-  color: #E7E3D8 !important;
+  background: #AEC6CF;
+  color: #2C3E50 !important;
 }
 
 .bookmark .status .count,
@@ -700,12 +700,12 @@ fieldset fieldset.listbox,
 
 .splash .favorite li a:hover {
   background: #769DAE !important;
-  color: #25352F !important;
+  color: #FFFFFF !important;
 }
 
 .splash .module h3 {
-  border-bottom: 1px solid #A8D2C1;
-  color: #E7E3D8;
+  border-bottom: 1px solid #769DAD;
+  color: #2C3E50;
 }
 
 .notice,
@@ -715,15 +715,15 @@ ul.notes,
 .caution,
 .error,
 .alert.flash {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
               0 2px  4px rgba(0, 0, 0, 0.05) !important;
   padding: 0.8em 1.6em !important;
   margin: 16px auto !important;
   max-width: 960px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
   text-align: left !important;
 }
@@ -731,8 +731,8 @@ ul.notes,
 .notice a,
 ul.notes a,
 .error a {
-  color: #8FC6B5 !important;
-  border-bottom: 1px dotted #8FC6B5;
+  color: #191970 !important;
+  border-bottom: 1px dotted #191970;
 }
 
 table,
@@ -760,7 +760,7 @@ ul.actions li {
 #main dl.work.meta.group {
   position: relative !important;
   z-index: 0 !important;
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border: none !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -786,7 +786,7 @@ ul.actions li {
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
   background-size: 160px auto, 160px auto;
-  filter: sepia(100%) hue-rotate(80deg) saturate(200%) brightness(0.9) drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg) brightness(85%) contrast(90%);
 }
 
 dl.work.meta > dt {
@@ -871,8 +871,8 @@ dl.work.meta dd a.tag {
 }
 
 dl.work.meta dd a.tag:hover {
-  color: #E7E3D8 !important;
-  border-bottom: 1px solid #E7E3D8 !important;
+  color: #000000 !important;
+  border-bottom: 1px solid #000000 !important;
 }
 
 dl.work.meta dd.fandom a.tag {
@@ -891,7 +891,7 @@ dl.work.meta > dt.language::before,
 dl.work.meta > dt.series::before,
 dl.work.meta > dt.collections::before,
 dl.work.meta > dt.stats::before {
-  color: #A8D2C1 !important;
+  color: #264A73 !important;
 }
 
 dl.work.meta dd.rating a.tag,
@@ -903,7 +903,7 @@ dl.work.meta dd.character a.tag,
 dl.work.meta dd.freeform a.tag,
 dl.work.meta dd.language,
 dl.work.meta dd.series a {
-  color: #A8D2C1 !important;
+  color: #264A73 !important;
 }
 
 .wrapper dl.work.meta dd.stats dl.stats {
@@ -918,7 +918,7 @@ dl.work.meta dd.series a {
   box-sizing: border-box !important;
   font-family: "Courier Prime", "Courier New", Courier, monospace !important;
   font-size: var(--ac-font-11) !important;
-  color: #B7C2BC !important;
+  color: #667583 !important;
 }
 
 .wrapper dl.work.meta dd.stats dl.stats dt {
@@ -936,7 +936,7 @@ dl.work.meta dd.series a {
 
 .wrapper dl.work.meta dd.stats dl.stats dd::before {
   font-weight: bold !important;
-  color: #D7E0DA !important;
+  color: #3f4e5a !important;
   margin-right: 4px !important;
 }
 
@@ -978,7 +978,7 @@ li.bookmark.blurb dl.stats {
   font-size: var(--ac-font-10);
   letter-spacing: 0.01em;
   line-height: 1.4;
-  color: #B7C2BC;
+  color: #667583;
 }
 
 li.work.blurb dl.stats dt,
@@ -1043,18 +1043,18 @@ li.bookmark.blurb dl.stats dd.hits::before {
 li.work.blurb dl.stats dd::before,
 li.bookmark.blurb dl.stats dd::before {
   font-weight: 600;
-  color: #D7E0DA;
+  color: #3f4e5a;
 }
 
 li.work.blurb dl.stats dd:not(:last-child)::after,
 li.bookmark.blurb dl.stats dd:not(:last-child)::after {
   content: " · ";
-  color: #93A39A;
+  color: #9aa8b5;
 }
 
 li.work.blurb dl.stats:hover,
 li.bookmark.blurb dl.stats:hover {
-  color: #E7E3D8;
+  color: #2c3e50;
 }
 
 .bookmark.blurb {
@@ -1098,7 +1098,7 @@ div.download a,
   letter-spacing: 0.08em !important;
   font-variant: small-caps;
   text-transform: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   text-decoration: none !important;
   cursor: pointer !important;
 }
@@ -1136,8 +1136,8 @@ div.download a:focus,
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
-  border-bottom: 1px solid #A8D2C1 !important;
+  color: #1f2a36 !important;
+  border-bottom: 1px solid #769DAD !important;
 }
 
 #workskin ul.actions,
@@ -1175,7 +1175,7 @@ div.download a:focus,
 }
 
 #dashboard:not(.own) {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border: none !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -1215,7 +1215,7 @@ div.download a:focus,
   font-variant: small-caps;
   letter-spacing: 0.08em !important;
   text-transform: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   text-decoration: none !important;
 }
 
@@ -1225,8 +1225,8 @@ div.download a:focus,
 #dashboard:not(.own) ul.secondary li a:focus,
 #dashboard:not(.own) ul.primary li.current a,
 #dashboard:not(.own) ul.secondary li.current a {
-  color: #E7E3D8 !important;
-  border-bottom: 1px solid #A8D2C1 !important;
+  color: #1f2a36 !important;
+  border-bottom: 1px solid #769DAD !important;
 }
 
 #dashboard:not(.own) .current {
@@ -1242,7 +1242,7 @@ div.download a:focus,
   padding: 10px 14px !important;
   border: none !important;
   border-radius: 14px;
-  background-color: #31463D;
+  background-color: #FCFAF6;
   overflow: hidden;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif;
   font-size: 0.9em !important;
@@ -1272,13 +1272,13 @@ div.download a:focus,
     left 0.8rem bottom 0.8rem,
     right 0.8rem bottom 0.8rem;
   background-size: 60px auto, 60px auto, 60px auto, 60px auto;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%);
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%);
 }
 
 #dashboard.own a,
 #dashboard.own .heading {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   text-shadow: none !important;
 }
 
@@ -1311,14 +1311,14 @@ div.download a:focus,
   padding: 0.1em 0.3em !important;
   text-decoration: none !important;
   border: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
 }
 
 #dashboard.own ul.navigation li a:hover,
 #dashboard.own ul.navigation li a:focus,
 #dashboard.own ul.primary li a:hover,
 #dashboard.own ul.primary li a:focus {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   border-bottom: none !important;
   background: transparent !important;
 }
@@ -1328,7 +1328,7 @@ div.download a:focus,
   background: transparent !important;
   border-radius: 0 !important;
   border: none !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   font-weight: 600;
 }
 
@@ -1336,14 +1336,14 @@ div.download a:focus,
   content: " ☙";
   font-size: 0.9em;
   margin-left: 0.15em;
-  color: #A8D2C1;
+  color: #769DAD;
 }
 
 #dashboard.own .current:hover,
 #dashboard.own .current:focus {
   border-bottom: none !important;
   background: transparent !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
 }
 
 .home .primary.header.module {
@@ -1394,8 +1394,8 @@ div.download a:focus,
   border-radius: 0 !important;
   z-index: 0;
   opacity: 0.8;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%);
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%);
 }
 
 .home .primary.header.module ul.actions {
@@ -1438,31 +1438,31 @@ div.download a:focus,
 
 .status .rec,
 img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
-  background-image: url("https://64.media.tumblr.com/478c526fccb3cdb2ea5aea3046be2988/0e1e9a343859899e-6f/s2048x3072/543e7199ae96a666682fef8d04893050912a6e89.png") !important;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%) !important;
+  background-image: url("https://64.media.tumblr.com/4fc7092db7cec1ae476ed9c111b10a01/f85c50a5736af30f-d2/s2048x3072/7cd33cc2d1118ed7014c29c5bc3e435f37d87679.png") !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 .status .public,
 img[src$="/images/skins/iconsets/default/bookmark-public.png"] {
-  background-image: url("https://64.media.tumblr.com/0d9a606177ea565532ee8ffe10acb527/42d1401444f1ff5b-cd/s2048x3072/d4b11014bb063058d38b0acd5945298a347842ec.png") !important;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%) !important;
+  background-image: url("https://64.media.tumblr.com/24d439468a38dfc9361b49fd22046342/f85c50a5736af30f-99/s2048x3072/e13f376eebaa845f2fc0d8f4815fc74a54d9031a.png") !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 .status .private,
 .status .private .text,
 img[src$="/images/skins/iconsets/default/bookmark-private.png"] {
-  background-image: url("https://64.media.tumblr.com/673596f07c0bf25f8e79286444b311c0/0e1e9a343859899e-7c/s2048x3072/a5dc8d9f273c98503f476a013b8e8fe83f77e7bd.png") !important;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%) !important;
+  background-image: url("https://64.media.tumblr.com/cb4158740bbcb2f247ea46719e7a8221/f85c50a5736af30f-46/s2048x3072/a71de7857fe0f6b9789aae7240b7b5040cdcce1b.png") !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 .status .hidden,
 img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
-  background-image: url("https://64.media.tumblr.com/06711d7e422bf6718b91cef809609cef/0e1e9a343859899e-c3/s2048x3072/b1f50ce672a3841b6079da1c9c0ffa7ab9a617a2.png") !important;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%) !important;
+  background-image: url("https://64.media.tumblr.com/153d90764bb41fdf370f220ed3498c62/f85c50a5736af30f-41/s2048x3072/88aa2c51f46ee8f0bbbc547686088bc598b701b5.png") !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 .chapter .secondary,
@@ -1563,7 +1563,7 @@ body .menu a {
   content: " ☙";
   margin-left: 0.2em;
   font-size: 1em;
-  color: #A8D2C1;
+  color: #769DAD;
 }
 
 #main a.rss,
@@ -1740,26 +1740,26 @@ li.bookmark.blurb ul.tags li a.tag {
   border-radius: 0 !important;
   border: none !important;
   box-shadow: none !important;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(82%) contrast(90%);
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%);
 }
 
 #header #greeting .dropdown > a[href*="/works/new"] {
-  content: url("https://64.media.tumblr.com/2d84ca2c751f08b78be62e9c7661a047/2f52ba760e32ea8f-5f/s2048x3072/7063a33bb603dcb6e5f7149571d53e86d510983a.png");
+  content: url("https://64.media.tumblr.com/e5898ab4620997f06564456fbda0a79d/1894d92920184bea-19/s2048x3072/37ebb9295d120bc2d32d3720f14769cbf5e98de4.png");
   color: transparent !important;
   font-size: 0;
   border-radius: 0 !important;
 }
 
 #header #greeting .dropdown > a[href*="/users/"] {
-  content: url("https://64.media.tumblr.com/5a6733e705428b4cbffcfb52c148de58/2f52ba760e32ea8f-45/s2048x3072/c0cdba6f22f05668d4640a4b53f6b20ccc392ade.png");
+  content: url("https://64.media.tumblr.com/bb49a135b061c41c43665f756ec87f1e/1894d92920184bea-47/s640x960/4c789a89382ba2e1b37fc30357f102650261214d.png");
   color: transparent !important;
   font-size: 0;
   border-radius: 0 !important;
 }
 
 #header #greeting a[href*="/users/logout"] {
-  content: url("https://64.media.tumblr.com/bbbde1669ef710f5e0acdb7746c80036/2f52ba760e32ea8f-43/s2048x3072/33229093bcabc764b76d8eec9a410a1122ae35f4.png");
+  content: url("https://64.media.tumblr.com/322d1fb96399006e3c25337116e57793/1894d92920184bea-53/s2048x3072/dba7ecfb6891fd370731392aeb4e10542b95b4cf.png");
   color: transparent !important;
   font-size: 0;
   border-radius: 0 !important;
@@ -1770,8 +1770,8 @@ li.bookmark.blurb ul.tags li a.tag {
 #header #greeting a[href*="/users/logout"]:hover {
   background: transparent !important;
   box-shadow: none !important;
-  filter: invert(25%) sepia(60%) saturate(320%)
-           hue-rotate(120deg) brightness(95%) contrast(90%);
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(95%) contrast(90%);
 }
 
 #greeting .menu {
@@ -1783,8 +1783,8 @@ li.bookmark.blurb ul.tags li a.tag {
 
 #kudos_message.notice,
 #kudos_message.kudos_error {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
               0 2px  4px rgba(0, 0, 0, 0.05) !important;
@@ -1804,12 +1804,12 @@ li.bookmark.blurb ul.tags li a.tag {
   content: "✧ Starlight falls upon this page, taking the shape of your kudos. Thank you for your gentle gaze. ✧";
   display: block;
   font-size: 0.9rem !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
 }
 
 #kudos_message.kudos_error {
   font-size: 0.9rem !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
 }
 
 .news .primary.header.module .icon,
@@ -1822,7 +1822,7 @@ li.bookmark.blurb ul.tags li a.tag {
   max-width: 700px;
   margin: 2em auto !important;
   padding: 1.8em 2.4em 1.6em !important;
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border-radius: 20px !important;
   border: none !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -1838,7 +1838,7 @@ li.bookmark.blurb ul.tags li a.tag {
   font-size: 0.95em !important;
   font-variant: small-caps;
   letter-spacing: 0.12em;
-  color: #A8D2C1;
+  color: #264A73;
 }
 
 #kudos h3.heading::before,
@@ -1846,7 +1846,7 @@ li.bookmark.blurb ul.tags li a.tag {
   content: "✧";
   margin: 0 0.4em;
   font-size: 0.9em;
-  color: #A8D2C1;
+  color: #769DAD;
 }
 
 #kudos p.kudos a {
@@ -1855,7 +1855,7 @@ li.bookmark.blurb ul.tags li a.tag {
 }
 
 #kudos p.kudos a:hover {
-  border-bottom: 1px solid #A8D2C1 !important;
+  border-bottom: 1px solid #769DAD !important;
 }
 
 #kudos p.kudos {
@@ -1868,7 +1868,7 @@ li.bookmark.blurb ul.tags li a.tag {
   box-shadow: none !important;
   text-align: left;
   line-height: 1.6;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
 }
 
 p.kudos {
@@ -1897,7 +1897,7 @@ p.kudos {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  filter: sepia(100%) hue-rotate(80deg) saturate(200%) brightness(0.9) drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
+  filter: none !important;
   opacity: 0.95;
 }
 
@@ -1913,21 +1913,21 @@ p.kudos {
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", "Georgia", serif !important;
 }
 
 #comment_form textarea,
 form[action*="/comments"] textarea {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.05) !important;
   padding: 1.2em 1em !important;
   width: 100% !important;
   min-height: 14em !important;
   font-size: 0.95em !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", serif !important;
   resize: vertical !important;
   box-sizing: border-box !important;
@@ -1945,11 +1945,11 @@ form[action*="/comments"] .actions {
 form[action*="/comments"] input[type="submit"] {
   background: transparent !important;
   border: none !important;
-  border-bottom: 1px solid #A8D2C1 !important;
+  border-bottom: 1px solid #769DAD !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   padding: 0.3em 1em !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", serif !important;
   font-variant: small-caps !important;
   letter-spacing: 0.08em !important;
@@ -1959,8 +1959,8 @@ form[action*="/comments"] input[type="submit"] {
 
 #comment_form .actions input[type="submit"]:hover,
 form[action*="/comments"] input[type="submit"]:hover {
-  border-bottom: 2px double #A8D2C1 !important;
-  color: #E7E3D8 !important;
+  border-bottom: 2px double #769DAD !important;
+  color: #1f2a36 !important;
   background: transparent !important;
 }
 
@@ -1980,7 +1980,7 @@ ol.comment.index.group {
 }
 
 li.comment {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border: none !important;
   border-radius: 8px !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.05) !important;
@@ -2003,7 +2003,7 @@ li.comment {
 
 .comment div.icon img {
   border-radius: 50% !important;
-  border: 1px solid #22322C !important;
+  border: 1px solid #AEC6CF !important;
 }
 
 .comment h4.byline {
@@ -2012,19 +2012,19 @@ li.comment {
   box-shadow: none !important;
   padding: 0 0 0.8em 0 !important;
   margin: 0 0 1em 0 !important;
-  border-bottom: 1px solid #22322C !important;
+  border-bottom: 1px solid #D4E0E7 !important;
   font-family: "Garamond", "Baskerville", serif !important;
 }
 
 .comment h4.byline a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   text-decoration: none !important;
   font-weight: bold !important;
 }
 
 .comment h4.byline a:hover {
-  color: #E7E3D8 !important;
-  border-bottom: 1px dotted #E7E3D8 !important;
+  color: #2C3E50 !important;
+  border-bottom: 1px dotted #2C3E50 !important;
 }
 
 .comment h4.byline .datetime {
@@ -2042,19 +2042,19 @@ li.comment {
   margin: 0 !important;
   line-height: 1.7 !important;
   font-size: 0.95em !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", serif !important;
 }
 
 .comment .userstuff a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   text-decoration: none !important;
-  border-bottom: 1px dotted #8FC6B5 !important;
+  border-bottom: 1px dotted #4682B4 !important;
 }
 
 .comment .userstuff a:hover {
-  color: #E7E3D8 !important;
-  border-bottom: 1px solid #E7E3D8 !important;
+  color: #2C3E50 !important;
+  border-bottom: 1px solid #2C3E50 !important;
 }
 
 ol.comment.index.group .read {
@@ -2062,13 +2062,13 @@ ol.comment.index.group .read {
 }
 
 ol.comment.index.group .unread {
-  border-left: 3px solid #A8D2C1 !important;
+  border-left: 3px solid #769DAD !important;
   padding-left: 1.3em !important;
 }
 
 .replied {
-  background: #22322C !important;
-  color: #E7E3D8 !important;
+  background: #AEC6CF !important;
+  color: #2C3E50 !important;
   border: none !important;
   border-radius: 4px !important;
   padding: 0.2em 0.6em !important;
@@ -2081,13 +2081,12 @@ ol.comment.index.group .unread {
 .thread {
   margin-left: 2em !important;
   padding-left: 1em !important;
-  border-left: 1px dashed #22322C !important;
+  border-left: 1px dashed #D4E0E7 !important;
 }
 
 .thread li.comment {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  background: rgba(252, 250, 246, 0.8) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
   margin: 1em 0 !important;
   padding: 1.2em 1em !important;
 }
@@ -2095,7 +2094,7 @@ ol.comment.index.group .unread {
 .comment .actions {
   margin-top: 1em !important;
   padding-top: 0.8em !important;
-  border-top: 1px solid #22322C !important;
+  border-top: 1px solid #D4E0E7 !important;
   text-align: right !important;
 }
 
@@ -2108,8 +2107,8 @@ ol.comment.index.group .unread {
 }
 
 .comment .actions a:hover {
-  color: #8FC6B5 !important;
-  border-bottom: 1px solid #8FC6B5 !important;
+  color: #4682B4 !important;
+  border-bottom: 1px solid #4682B4 !important;
 }
 
 ol.comment.index.group {
@@ -2126,7 +2125,7 @@ ol.comment.index.group {
 }
 
 ol.comment.index.group > li.comment {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border: none !important;
   border-radius: 12px !important;
   box-shadow: 0px 2px 8px rgba(118,157,173,0.08) !important;
@@ -2175,21 +2174,21 @@ ol.comment.index.group .unread {
 
 .comment div.icon img {
   border-radius: 50% !important;
-  border: 1px solid #22322C !important;
+  border: 1px solid #AEC6CF !important;
   width: 100% !important;
   height: 100% !important;
 }
 
 .comment h4.byline a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   text-decoration: none !important;
   border-bottom: none !important;
   font-weight: bold !important;
 }
 
 .comment h4.byline a:hover {
-  color: #E7E3D8 !important;
-  border-bottom: 1px dotted #E7E3D8 !important;
+  color: #2C3E50 !important;
+  border-bottom: 1px dotted #2C3E50 !important;
 }
 
 .comment h4.byline .datetime {
@@ -2203,7 +2202,7 @@ ol.comment.index.group .unread {
   border: none !important;
   box-shadow: none !important;
   padding: 0.6em 0 0 0 !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   line-height: 1.7 !important;
   font-family: "Garamond", serif !important;
   clear: both !important;
@@ -2211,14 +2210,14 @@ ol.comment.index.group .unread {
 }
 
 .comment .userstuff a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   text-decoration: none !important;
   border-bottom: none !important;
 }
 
 .comment .userstuff a:hover {
-  color: #E7E3D8 !important;
-  border-bottom: 1px solid #E7E3D8 !important;
+  color: #2C3E50 !important;
+  border-bottom: 1px solid #2C3E50 !important;
 }
 
 .comment .actions,
@@ -2255,8 +2254,8 @@ ol.comment.index.group .unread {
 }
 
 .comment .actions a:hover {
-  color: #8FC6B5 !important;
-  border-bottom: 1px solid #8FC6B5 !important;
+  color: #4682B4 !important;
+  border-bottom: 1px solid #4682B4 !important;
 }
 
 #add_comment,
@@ -2280,7 +2279,7 @@ ol.comment.index.group .unread {
 
 #add_comment dt {
   border-bottom: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", serif !important;
 }
 
@@ -2288,9 +2287,9 @@ ol.comment.index.group .unread {
 #add_comment input[type="email"],
 #add_comment select,
 #add_comment textarea {
-  background: #31463D !important;
-  color: #E7E3D8 !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  color: #2C3E50 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
   box-shadow: 0px 2px 6px rgba(118,157,173,0.08) !important;
   padding: .4em .6em !important;
@@ -2313,10 +2312,10 @@ ol.comment.index.group .unread {
 #add_comment input[type="email"]:focus,
 #add_comment select:focus,
 #add_comment textarea:focus {
-  background: #25352F !important;
+  background: #FFFFFF !important;
   box-shadow: 0px 3px 10px rgba(118,157,173,0.12) !important;
   outline: none !important;
-  border-color: #A8D2C1 !important;
+  border-color: #769DAD !important;
 }
 
 #add_comment .footnote,
@@ -2342,7 +2341,7 @@ ol.comment.index.group .unread {
   line-height: 1.2 !important;
   padding: 0 0.1em 0.15em 0.1em !important;
   margin: 0 !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", serif !important;
   font-variant: normal !important;
   cursor: pointer !important;
@@ -2353,7 +2352,7 @@ ol.comment.index.group .unread {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
 }
 
 .comment div.icon {
@@ -2370,10 +2369,9 @@ ol.comment.index.group .unread {
 #chapters .userstuff p,
 #chapters .userstuff li,
 #chapters .userstuff blockquote {
-  color: #ecf3e6 !important;
-  font-family: -apple-system, BlinkMacSystemFont,
-               "PingFang SC", "Microsoft YaHei",
-               "Helvetica Neue", Arial, sans-serif !important;
+  color: #111111 !important;
+  font-family: "Helvetica Neue", Arial, sans-serif,
+               "PingFang SC", "Microsoft YaHei" !important;
   line-height: 1.5 !important;
   font-size: 0.9rem !important;
 }
@@ -2421,17 +2419,17 @@ ol.comment.index.group .unread {
 #chapters .userstuff h2,
 #chapters .userstuff h3,
 #chapters .userstuff h4 {
-  color: #ecf3e6 !important;
-  font-family: -apple-system, BlinkMacSystemFont,
-               "PingFang SC", "Microsoft YaHei",
-               "Helvetica Neue", Arial, sans-serif !important;
+  color: #111111 !important;
+  font-family: "Helvetica Neue", Arial, sans-serif,
+               "PingFang SC", "Microsoft YaHei" !important;
 }
 
 img[src$="/images/lockblue.png"] {
   content: url("https://64.media.tumblr.com/758487a35732e7abee4d750b2ac105b9/855358a45e824f08-d2/s1280x1920/e18616c3061e4f6ba39b4cb6d50a2d12ffffc056.png") !important;
   height: 14px !important;
   width: auto !important;
-  filter: sepia(100%) hue-rotate(80deg) saturate(200%) brightness(0.9) drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
   vertical-align: middle !important;
 }
 
@@ -2459,8 +2457,8 @@ img[src$="/images/lockblue.png"] {
   background-repeat: repeat-x !important;
   background-position: center bottom !important;
   background-size: 110px auto !important;
-  filter: sepia(100%) hue-rotate(65deg) saturate(700%) brightness(1.1) contrast(0.9) 
-          drop-shadow(0 0 2px rgba(144, 238, 144, 0.8)) !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 body.tags-show .primary.header.module .icon,
@@ -2509,7 +2507,7 @@ body .menu li > span {
   display: block !important;
   padding: 6px 18px !important;
   margin: 0 !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   text-decoration: none !important;
   background: transparent !important;
   border: none !important;
@@ -2531,7 +2529,7 @@ body .dropdown-menu li > a:active,
 body .dropdown-menu li > span:active,
 body .menu li > a:active,
 body .menu li > span:active {
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   padding: 6px 18px !important;
   margin: 0 !important;
   border: none !important;
@@ -2553,7 +2551,7 @@ body .menu span.selected {
   border-radius: 0 !important;
   border: none !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   padding: 6px 18px !important;
   margin: 0 !important;
   position: relative !important;
@@ -2604,7 +2602,7 @@ body .menu span.selected::after {
   background: transparent !important;
   box-shadow: none !important;
   text-decoration: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-weight: normal !important;
 }
 
@@ -2629,7 +2627,7 @@ body .menu span.selected::after {
   border: none !important;
   background: transparent !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   text-decoration: none !important;
   font-weight: normal !important;
 }
@@ -2653,7 +2651,8 @@ body .menu span.selected::after {
   background-repeat: repeat-x !important;
   background-position: center center !important;
   background-size: auto 100% !important;
-  filter: sepia(100%) hue-rotate(80deg) saturate(200%) brightness(0.9) drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 #workskin hr {
@@ -2664,35 +2663,36 @@ body .menu span.selected::after {
   background-repeat: repeat-x !important;
   background-position: center center !important;
   background-size: auto 100% !important;
-  filter: sepia(100%) hue-rotate(80deg) saturate(200%) brightness(0.9) drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
+  filter: invert(25%) sepia(60%) saturate(400%)
+          hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 .listbox,
 fieldset fieldset.listbox {
-  background: #2A3B34 !important;
-  border: 1px solid #22322C !important;
+  background: #FAF7F0 !important;
+  border: 1px solid #D4E0E7 !important;
   border-radius: 10px !important;
   box-shadow: none !important;
 }
 
 .listbox .index,
 fieldset fieldset.listbox .index {
-  background: #2A3B34 !important;
+  background: #FAF7F0 !important;
   border: none !important;
   box-shadow: none !important;
 }
 
 .listbox > .heading,
 .listbox h3.heading {
-  background: #2A3B34 !important;
-  border-bottom: 1px solid #22322C !important;
+  background: #FAF7F0 !important;
+  border-bottom: 1px solid #D4E0E7 !important;
   margin: 0 !important;
   padding: 6px 10px !important;
 }
 
 .listbox .index .work.blurb,
 .listbox .index .bookmark.blurb {
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
 }
 
 .listbox > .heading,
@@ -2714,7 +2714,7 @@ ul.index a {
 li.collection.blurb {
   position: relative !important;
   z-index: 0 !important;
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border-radius: 8px !important;
   border: none !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -2753,7 +2753,7 @@ body #main .group a:active,
 body #main .blurb h4 a:active,
 body #main .blurb ul.tags li a.tag:active {
   background-color: transparent !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   box-shadow: none !important;
   border-color: transparent !important;
   outline: none !important;
@@ -2764,7 +2764,7 @@ body #main ul.tags li.relationships a.tag:active,
 body #main ul.tags li.characters a.tag:active,
 body #main ul.tags li.freeforms a.tag:active {
   background-color: transparent !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
 }
 
 .bookmark.blurb .status span,
@@ -2810,7 +2810,7 @@ div.download a:hover,
 div.download a:focus,
 .splash .favorite li a:hover,
 .splash .favorite li a:focus {
-  border-bottom-color: #A8D2C1 !important;
+  border-bottom-color: #769DAD !important;
 }
 
 #header {
@@ -2876,14 +2876,14 @@ div.download a:focus,
 #bookmark_form input[type="email"],
 #bookmark-form input[type="search"],
 #bookmark_form input[type="search"] {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
   box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
   padding: 0.6em 0.8em !important;
   box-sizing: border-box !important;
   width: 100% !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
 }
 
@@ -2902,8 +2902,8 @@ div.download a:focus,
 #bookmark_form input[type="email"]:focus,
 #bookmark-form input[type="search"]:focus,
 #bookmark_form input[type="search"]:focus {
-  background: #25352F !important;
-  border-color: #A8D2C1 !important;
+  background: #FFFFFF !important;
+  border-color: #769DAD !important;
   box-shadow: 0 3px 10px rgba(118,157,173,0.12) !important;
   outline: none !important;
 }
@@ -2943,9 +2943,9 @@ body[class*=" skins-"] #main .navigation a,
 body[class^="skins-"] #main .navigation a:visited,
 body[class*=" skins-"] #main .navigation a:visited {
   display: inline-block;
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   color: #3b4b5f !important;
-  border: 1px solid #22322C !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: none !important;
   padding: 0.25em 1em !important;
@@ -2959,7 +2959,7 @@ body[class^="skins-"] #main .navigation a:hover,
 body[class*=" skins-"] #main .navigation a:hover,
 body[class^="skins-"] #main .navigation a:focus,
 body[class*=" skins-"] #main .navigation a:focus {
-  background: #25352F !important;
+  background: #ffffff !important;
   border-color: #8ea7d6 !important;
   color: #24364c !important;
   outline: none !important;
@@ -2975,9 +2975,9 @@ body[class*=" skins-"] #main .dynamic {
 body[class^="skins-"] #main .dynamic .heading,
 body[class*=" skins-"] #main .dynamic .heading {
   display: inline-block !important;
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   color: #3b4b5f !important;
-  border: 1px solid #22322C !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
   padding: 0.25em 1em !important;
@@ -2997,7 +2997,7 @@ body[class^="skins-"] #main .dynamic .heading:hover,
 body[class*=" skins-"] #main .dynamic .heading:hover,
 body[class^="skins-"] #main .dynamic .heading a:focus,
 body[class*=" skins-"] #main .dynamic .heading a:focus {
-  background: #25352F !important;
+  background: #ffffff !important;
   border-color: #8ea7d6 !important;
   color: #24364c !important;
   outline: none !important;
@@ -3005,8 +3005,8 @@ body[class*=" skins-"] #main .dynamic .heading a:focus {
 
 li.download .secondary,
 li.chapter .secondary {
-  background-color: #31463D !important;
-  border: 1px solid #22322C !important;
+  background-color: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
   background-image: none !important;
@@ -3014,28 +3014,28 @@ li.chapter .secondary {
 
 li.download .secondary a,
 li.chapter .secondary a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   text-decoration: none !important;
   border: none !important;
 }
 
 li.download .secondary a:hover,
 li.chapter .secondary a:hover {
-  background-color: #25352F !important;
-  color: #E7E3D8 !important;
+  background-color: #ffffff !important;
+  color: #2C3E50 !important;
   border-radius: 4px !important;
 }
 
 li.chapter .secondary select {
-  background-color: #25352F !important;
-  border: 1px solid #22322C !important;
+  background-color: #ffffff !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 4px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
 }
 
 li.chapter .secondary input[type="submit"] {
-  background-color: #25352F !important;
-  border: 1px solid #22322C !important;
+  background-color: #ffffff !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 99px !important;
   color: #3b4b5f !important;
   cursor: pointer !important;
@@ -3043,7 +3043,7 @@ li.chapter .secondary input[type="submit"] {
 }
 
 li.chapter .secondary input[type="submit"]:hover {
-  background-color: #25352F !important;
+  background-color: #f2f6ff !important;
   color: #24364c !important;
 }
 
@@ -3055,8 +3055,8 @@ form.filters {
 }
 
 form.filters fieldset {
-  background-color: #31463D !important;
-  border: 1px solid #22322C !important;
+  background-color: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
   margin-bottom: 15px !important;
   padding: 15px !important;
@@ -3079,8 +3079,8 @@ form.filters fieldset dd {
 }
 
 #main form[action*="import"] {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
   padding: 20px !important;
@@ -3090,9 +3090,9 @@ form.filters fieldset dd {
 }
 
 #main form[action*="import"] legend {
-  background: #31463D !important;
-  color: #8FC6B5 !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  color: #4682B4 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 20px !important;
   padding: 4px 12px !important;
   font-weight: bold !important;
@@ -3131,10 +3131,10 @@ form.filters fieldset dd {
 #main form[action*="import"] textarea,
 #main form[action*="import"] input[type="text"],
 #main form[action*="import"] select {
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #ffffff !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   padding: 10px !important;
   width: 100% !important;
   box-sizing: border-box !important;
@@ -3148,20 +3148,20 @@ form.filters fieldset dd {
 #main form[action*="import"] textarea:focus,
 #main form[action*="import"] input[type="text"]:focus,
 #main form[action*="import"] select:focus {
-  border-color: #8FC6B5 !important;
-  background-color: #25352F !important;
+  border-color: #4682B4 !important;
+  background-color: #ffffff !important;
   outline: none !important;
 }
 
 #main form[action*="import"] label,
 #main form[action*="import"] .heading {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   font-weight: bold !important;
 }
 
 #work-form {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
   padding: 20px !important;
@@ -3171,9 +3171,9 @@ form.filters fieldset dd {
 }
 
 #work-form legend {
-  background: #31463D !important;
-  color: #8FC6B5 !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  color: #4682B4 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 20px !important;
   padding: 4px 15px !important;
   font-weight: bold !important;
@@ -3209,10 +3209,10 @@ form.filters fieldset dd {
 #work-form textarea,
 #work-form input[type="text"],
 #work-form select {
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #ffffff !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   padding: 10px !important;
   width: 100% !important;
   box-sizing: border-box !important;
@@ -3226,13 +3226,13 @@ form.filters fieldset dd {
 #work-form textarea:focus,
 #work-form input[type="text"]:focus,
 #work-form select:focus {
-  border-color: #8FC6B5 !important;
-  background-color: #25352F !important;
+  border-color: #4682B4 !important;
+  background-color: #ffffff !important;
   outline: none !important;
 }
 
 #work-form label {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   font-weight: bold !important;
 }
 
@@ -3248,7 +3248,7 @@ a.current,
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   font-weight: bold !important;
   cursor: default !important;
   padding: 0.25em 0.5em !important;
@@ -3262,7 +3262,7 @@ a.current::after,
   content: " ☙" !important;
   margin-left: 0.2em !important;
   font-size: 1.1em !important;
-  color: #A8D2C1 !important;
+  color: #769DAD !important;
 }
 
 li.mystery .icon,
@@ -3279,8 +3279,8 @@ li.mystery .header .mods {
 
 #main .statistics .group,
 #main .statistics .index {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
   padding: 20px !important;
@@ -3303,7 +3303,7 @@ li.mystery .header .mods {
 }
 
 #main .statistics dd {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-weight: bold !important;
   font-family: "Georgia", serif !important;
   font-size: 1.1em !important;
@@ -3311,7 +3311,7 @@ li.mystery .header .mods {
 
 #main .statistics h3.heading,
 #main .statistics h4.heading {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   border-bottom: 1px solid rgba(174, 198, 207, 0.4) !important;
   padding-bottom: 10px !important;
   margin-bottom: 15px !important;
@@ -3503,10 +3503,6 @@ html body #header h1.heading a {
   color: transparent !important;
   text-indent: -9999px !important;
   overflow: hidden !important;
-  -webkit-filter: sepia(80%) hue-rotate(80deg) saturate(150%) brightness(0.9)
-                drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
-  filter: sepia(80%) hue-rotate(80deg) saturate(150%) brightness(0.9)
-        drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
 }
 
 html body #header .heading {
@@ -3546,12 +3542,12 @@ html body #outer #header h1.heading a {
   margin: 0 auto !important;
 }
 
-H4.viewed {
-  background-color: #2A3B34 !important;
-  border: 1px solid #3d5248 !important;
+h4.viewed {
+  background-color: #FAF7F0 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 10px !important;
-  box-shadow: 0 2px 6px rgba(118, 210, 168, 0.15) !important;
-  color: #C9DBCB !important;
+  box-shadow: 0 2px 6px rgba(118, 157, 173, 0.15) !important;
+  color: #546e7a !important;
   font-family: "Garamond", "Baskerville", serif !important;
   font-size: 0.9em !important;
   font-weight: normal !important;
@@ -3563,9 +3559,9 @@ H4.viewed {
 }
 
 h4.viewed a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   text-decoration: none !important;
-  border-bottom: 1px dotted #8FC6B5 !important;
+  border-bottom: 1px dotted #4682B4 !important;
 }
 
 #workskin .summary .heading,
@@ -3606,7 +3602,7 @@ h4.viewed a {
 form#skin_form a,
 form#skin_form legend,
 form#skin_form label {
-  color: #E7E3D8 !important;
+  color: #000000 !important;
   font-size: 1rem !important;
   display: inline-block !important;
   visibility: visible !important;
@@ -3626,8 +3622,8 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 }
 
 #main form[action*="/skins"] {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 16px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
   padding: 20px !important;
@@ -3645,14 +3641,14 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 #main form[action*="/skins"] fieldset legend {
   display: inline-flex !important;
   align-items: center !important;
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 50px !important;
   box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
   padding: 8px 20px !important;
   margin-bottom: 15px !important;
   width: auto !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-weight: bold !important;
   font-size: 1.1em !important;
   font-family: "Garamond", serif !important;
@@ -3660,10 +3656,10 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 
 #main form[action*="/skins"] fieldset legend a.expand {
   float: none !important;
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 20px !important;
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   margin-left: 15px !important;
   padding: 2px 12px !important;
   font-size: 0.8em !important;
@@ -3676,16 +3672,16 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 }
 
 #main form[action*="/skins"] fieldset legend a.expand:hover {
-  background: #22322C !important;
-  color: #25352F !important;
+  background: #AEC6CF !important;
+  color: #FFFFFF !important;
 }
 
 #main form[action*="/skins"] a.action,
 #main form[action*="/skins"] .actions a {
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   padding: 5px 15px !important;
   margin: 10px 5px !important;
   display: inline-block !important;
@@ -3696,9 +3692,9 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 #main form[action*="/skins"] input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
 #main form[action*="/skins"] textarea,
 #main form[action*="/skins"] select {
-  background: #25352F !important;
-  color: #E7E3D8 !important;
-  border: 1px solid #22322C !important;
+  background: #ffffff !important;
+  color: #2C3E50 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
   box-shadow: none !important;
   padding: 10px !important;
@@ -3708,9 +3704,9 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 }
 
 #main form[action*="/skins"] fieldset input[type="submit"] {
-  background: #31463D !important;
-  color: #E7E3D8 !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  color: #2C3E50 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
   padding: 0.5em 2em !important;
@@ -3724,16 +3720,16 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 #main form[action*="/skins"] fieldset input[type="submit"]:hover,
 #main form[action*="/skins"] fieldset input[type="submit"]:active,
 #main form[action*="/skins"] fieldset input[type="submit"]:focus {
-  background: #31463D !important;
-  color: #E7E3D8 !important;
-  border-color: #22322C !important;
+  background: #FCFAF6 !important;
+  color: #2C3E50 !important;
+  border-color: #AEC6CF !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
   outline: none !important;
 }
 
 #dashboard ul.navigation li a,
 .collection .navigation ul li a {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -3748,7 +3744,7 @@ form#skin_form #skin_parents_skin_ids_field a.action {
 .collection .navigation ul li a:focus,
 .collection .navigation ul li a:hover,
 .collection .navigation ul li.current a {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   background: transparent !important;
   background-color: transparent !important;
   outline: none !important;
@@ -3769,7 +3765,7 @@ body[class*="collection"] #main .listbox,
 body[class*="collection"] #main .index.group,
 body[class*="collection"] #main dl.meta,
 body[class*="collection"] #main dl.index {
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border: none !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.05) !important;
@@ -3779,9 +3775,9 @@ body[class*="collection"] #main dl.index {
 }
 
 #main select#media_id {
-  background: #31463D !important;
-  color: #E7E3D8 !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  color: #2C3E50 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 10px !important;
   padding: 0.55em 0.8em !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
@@ -3793,8 +3789,8 @@ body[class*="collection"] #main dl.index {
 
 #main select#media_id:focus {
   outline: none !important;
-  background: #25352F !important;
-  border-color: #A8D2C1 !important;
+  background: #FFFFFF !important;
+  border-color: #769DAD !important;
   box-shadow: 0 3px 10px rgba(118,157,173,0.12) !important;
 }
 
@@ -3803,7 +3799,7 @@ body[class*="collection"] #main dl.index {
   background: transparent !important;
   border: none !important;
   border-bottom: 1px solid transparent !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
   font-size: var(--ac-font-12) !important;
   font-variant: small-caps !important;
@@ -3814,8 +3810,8 @@ body[class*="collection"] #main dl.index {
 
 #main p[title*="media"] input[type="submit"]:hover,
 #main input[type="submit"][value="Show"]:hover {
-  border-bottom-color: #A8D2C1 !important;
-  color: #E7E3D8 !important;
+  border-bottom-color: #769DAD !important;
+  color: #1f2a36 !important;
 }
 
 #main fieldset:has(#media_id) {
@@ -3843,7 +3839,7 @@ body[class*="collection"] #main dl.index {
 }
 
 #header.region.collection h2.collections {
-  color: #8FC6B5 !important;
+  color: #7fa7c9 !important;
   text-align: center;
   width: 100%;
 }
@@ -3864,12 +3860,11 @@ body[class*="collection"] #main dl.index {
   background-position: center !important;
   background-size: contain !important;
   opacity: 0.9 !important;
-  filter: sepia(35%) hue-rotate(78deg) saturate(120%) brightness(1.02) contrast(0.95)
-               drop-shadow(0 0 1.2px rgba(201, 219, 203, 0.8));
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg) brightness(85%) contrast(90%) !important;
 }
 
 #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group {
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border: none !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.05) !important;
@@ -3884,7 +3879,7 @@ body[class*="collection"] #main dl.index {
 }
 
 #main dl.meta.group {
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border: none !important;
   border-radius: 10px !important;
   box-shadow: 0 8px 18px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.05) !important;
@@ -3899,7 +3894,7 @@ body[class*="collection"] #main dl.index {
 }
 
 #footer {
-  background: #25352F !important;
+  background: #9FB8C9 !important;
   border-top: none !important;
 }
 
@@ -3908,32 +3903,32 @@ body[class*="collection"] #main dl.index {
 #footer a,
 #footer a:link,
 #footer a:visited {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   text-shadow: none !important;
 }
 
 #footer a:hover,
 #footer a:focus,
 #footer a:active {
-  color: #E7E3D8 !important;
+  color: #1f2a36 !important;
   border-bottom: 1px solid rgba(44,62,80,0.45) !important;
 }
 
 li.work.blurb .header h4.heading a:first-of-type:visited,
 li.bookmark.blurb .header h4.heading a:first-of-type:visited {
-  color: #6EA98F !important;
+  color: #6F7FA8 !important;
 }
 
 li.work.blurb .header h4.heading a[href*="/users/"]:visited,
 li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited {
-  color: #6EA98F !important;
+  color: #6F7FA8 !important;
 }
 
 li.work.blurb .header h4.heading a:first-of-type:visited:hover,
 li.bookmark.blurb .header h4.heading a:first-of-type:visited:hover,
 li.work.blurb .header h4.heading a[href*="/users/"]:visited:hover,
 li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited:hover {
-  color: #7DBAA0 !important;
+  color: #5E6F9B !important;
 }
 
 #dashboard .hidden {
@@ -3998,7 +3993,7 @@ li.chapter .secondary input[type="submit"] {
 #main #user-series li.series.blurb {
   position: relative !important;
   z-index: 0 !important;
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border-radius: 8px !important;
   border: none !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -4022,8 +4017,8 @@ li.chapter .secondary input[type="submit"] {
   background-repeat: no-repeat, no-repeat !important;
   background-position: left top, right bottom !important;
   background-size: 85px auto, 85px auto !important;
-  filter: invert(25%) sepia(60%) saturate(320%)  hue-rotate(120deg)
-          brightness(82%) contrast(90%) !important;
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg)
+          brightness(85%) contrast(90%) !important;
 }
 
 #main #user-series li.series.blurb .header,
@@ -4062,14 +4057,14 @@ li.chapter .secondary input[type="submit"] {
 #main #user-series li.series.blurb .header h4.heading a:first-of-type {
   font-size: 1.0rem !important;
   font-weight: 700 !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   margin: 0 0 0.18em 0 !important;
 }
 
 #main #user-series li.series.blurb .header h4.heading a[rel="author"] {
   font-size: 0.85rem !important;
   font-weight: 400 !important;
-  color: #8FC6B5important;
+  color: #546e7a !important;
   margin-top: 0.15em !important;
 }
 
@@ -4095,7 +4090,7 @@ li.chapter .secondary input[type="submit"] {
   left: auto !important;
   margin: 0.4em 0 0.5em 0 !important;
   padding: 0.6em 0 0 0 !important;
-  border-top: 1px solid #22322C !important;
+  border-top: 1px solid #D4E0E7 !important;
   line-height: 1.2 !important;
   font-size: 0.85em !important;
 }
@@ -4135,7 +4130,7 @@ li.chapter .secondary input[type="submit"] {
   font-size: var(--ac-font-10) !important;
   letter-spacing: 0.01em !important;
   line-height: 1.4 !important;
-  color: #B7C2BC !important;
+  color: #667583 !important;
 }
 
 #main #user-series li.series.blurb dl.stats dt {
@@ -4167,22 +4162,22 @@ li.chapter .secondary input[type="submit"] {
 #main #user-series li.series.blurb dl.stats dd.words::before {
   content: "Words " !important;
   font-weight: 600 !important;
-  color: #D7E0DA !important;
+  color: #3f4e5a !important;
 }
 
 #main #user-series li.series.blurb dl.stats dd.works::before {
   content: "Works " !important;
   font-weight: 600 !important;
-  color: #D7E0DA !important;
+  color: #3f4e5a !important;
 }
 
 #main #user-series li.series.blurb dl.stats dd:not(:last-child)::after {
   content: " · " !important;
-  color: #93A39A !important;
+  color: #9aa8b5 !important;
 }
 
 #main li.user.pseud.blurb {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border-radius: 8px !important;
   border: none !important;
   box-shadow: 0 8px 18px rgba(0,0,0,.04),
@@ -4200,8 +4195,8 @@ li.chapter .secondary input[type="submit"] {
 
 #dashboard ul.navigation .expandable.secondary,
 #main ul.navigation .expandable.secondary {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #D4E0E7 !important;
   border-radius: 10px !important;
   box-shadow: 0 10px 20px rgba(0,0,0,.08) !important;
   padding: 6px !important;
@@ -4236,8 +4231,8 @@ li.chapter .secondary input[type="submit"] {
 #header #search p.tip,
 #main #search .tip,
 #main #search p.tip {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: 0 2px 6px rgba(118,157,173,0.10) !important;
   display: inline-block !important;
@@ -4245,7 +4240,7 @@ li.chapter .secondary input[type="submit"] {
   box-sizing: border-box !important;
   padding: 4px 10px !important;
   margin-top: 6px !important;
-  color: #B7C2BC !important;
+  color: #667583 !important;
   font-size: var(--ac-font-11) !important;
   line-height: 1.2 !important;
   font-family: "Courier Prime","Courier New",monospace !important;
@@ -4274,10 +4269,10 @@ li.chapter .secondary input[type="submit"] {
 }
 
 #main form[action*="/preferences"] fieldset {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border: none !important;
   border-radius: 14px !important;
-  box-shadow: 0 0 0 1px #22322C inset,               
+  box-shadow: 0 0 0 1px #AEC6CF inset,               
     0 2px 8px rgba(0,0,0,0.05) !important;
   padding: 14px 14px 10px 14px !important;
   margin: 0 0 16px 0 !important;
@@ -4285,13 +4280,13 @@ li.chapter .secondary input[type="submit"] {
 
 #main form[action*="/preferences"] fieldset legend {
   display: inline-block !important;
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
   padding: 6px 14px !important;
   margin: 0 0 10px 10px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
   font-weight: bold !important;
   letter-spacing: 0.02em !important;
@@ -4302,13 +4297,13 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/preferences"] input[type="password"],
 #main form[action*="/preferences"] select,
 #main form[action*="/preferences"] textarea {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 8px !important;
   box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
   padding: 0.55em 0.75em !important;
   box-sizing: border-box !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
 }
 
@@ -4328,20 +4323,20 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/preferences"] .help a,
 #main form[action*="/preferences"] a[title*="help"],
 #main form[action*="/preferences"] a[title*="Help"] {
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   padding: 0 0.55em !important;
   text-decoration: none !important;
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
 }
 
 #main form[action*="/preferences"] .note,
 #main form[action*="/preferences"] .footnote,
 #main form[action*="/preferences"] p.note,
 #main form[action*="/preferences"] p.footnote {
-  background: #25352F !important;
-  border: 1px dashed #22322C !important;
+  background: #FFFFFF !important;
+  border: 1px dashed #AEC6CF !important;
   border-radius: 10px !important;
   padding: 0.6em 0.8em !important;
 }
@@ -4355,10 +4350,10 @@ li.chapter .secondary input[type="submit"] {
 
 #main form#work_search fieldset,
 #main form[action*="/works/search"] fieldset {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border: none !important;
   border-radius: 14px !important;
-  box-shadow: 0 0 0 1px #22322C inset,
+  box-shadow: 0 0 0 1px #AEC6CF inset,
     0 2px 8px rgba(0,0,0,0.05) !important;
   padding: 14px 14px 10px 14px !important;
   margin: 0 0 16px 0 !important;
@@ -4367,13 +4362,13 @@ li.chapter .secondary input[type="submit"] {
 #main form#work_search fieldset legend,
 #main form[action*="/works/search"] fieldset legend {
   display: inline-block !important;
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
   padding: 6px 14px !important;
   margin: 0 0 10px 10pxexplains !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
   font-weight: bold !important;
   letter-spacing: 0.02em !important;
@@ -4402,10 +4397,10 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/users/search"] fieldset,
 #main form[action*="/tags/search"] fieldset,
 #main form[action*="/bookmarks/search"] fieldset {
-  background: #31463D !important;
+  background: #FCFAF6 !important;
   border: none !important;
   border-radius: 14px !important;
-  box-shadow: 0 0 0 1px #22322C inset,
+  box-shadow: 0 0 0 1px #AEC6CF inset,
     0 2px 8px rgba(0,0,0,0.05) !important;
   padding: 14px 14px 10px 14px !important;
   margin: 0 0 16px 0 !important;
@@ -4421,13 +4416,13 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/tags/search"] fieldset legend,
 #main form[action*="/bookmarks/search"] fieldset legend {
   display: inline-block !important;
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
   padding: 6px 14px !important;
   margin: 0 0 10px 10px !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
   font-weight: bold !important;
   letter-spacing: 0.02em !important;
@@ -4510,15 +4505,15 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/bookmarks/search"] input[type="url"],
 #main form[action*="/bookmarks/search"] select,
 #main form[action*="/bookmarks/search"] textarea {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 10px !important;
   box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
   padding: 0.55em 0.75em !important;
   box-sizing: border-box !important;
   width: 100% !important;
   max-width: 100% !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
 }
 
@@ -4575,8 +4570,8 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/tags/search"] button,
 #main form[action*="/bookmarks/search"] input[type="submit"],
 #main form[action*="/bookmarks/search"] button {
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 99px !important;
   padding: 0.45em 1.1em !important;
   color: #3b4b5f !important;
@@ -4602,7 +4597,7 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/tags/search"] button:hover,
 #main form[action*="/bookmarks/search"] input[type="submit"]:hover,
 #main form[action*="/bookmarks/search"] button:hover {
-  background: #25352F !important;
+  background: #f2f6ff !important;
   color: #24364c !important;
 }
 
@@ -4624,12 +4619,12 @@ li.chapter .secondary input[type="submit"] {
 #main form[action*="/tags/search"] .help a,
 #main form[action*="/bookmarks/search"] a.help,
 #main form[action*="/bookmarks/search"] .help a {
-  background: #25352F !important;
-  border: 1px solid #22322C !important;
+  background: #FFFFFF !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 999px !important;
   padding: 0 0.55em !important;
   text-decoration: none !important;
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
 }
 
 .work.blurb .header h4.heading,
@@ -4646,7 +4641,7 @@ li.chapter .secondary input[type="submit"] {
 .bookmark.blurb .header h4.heading a:first-of-type {
   font-size: 1.0rem !important;
   font-weight: bold !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   display: block;
   text-decoration: none !important;
 }
@@ -4655,7 +4650,7 @@ li.chapter .secondary input[type="submit"] {
 .bookmark.blurb .header h4.heading a[rel="author"] {
   font-size: 0.85rem !important;
   font-weight: normal !important;
-  color: #8FC6B5 !important;
+  color: #546e7a !important;
   display: block !important;
 }
 
@@ -4663,7 +4658,7 @@ li.chapter .secondary input[type="submit"] {
 .bookmark.blurb .header h4.heading a[href*="/users/"]:not([rel="author"]):not(:first-of-type) {
   font-size: 0.85rem !important;
   font-weight: normal !important;
-  color: #8FC6B5 !important;
+  color: #546e7a !important;
   display: block !important;
 }
 
@@ -4678,7 +4673,7 @@ li.chapter .secondary input[type="submit"] {
   display: block;
   font-size: 0.85rem;
   font-weight: normal;
-  color: #A8D2C1;
+  color: #546e7a;
 }
 
 .work.blurb .header h4.heading:not(:has(a[rel="author"])):not(:has(a[href*="/users/"]:not([rel="author"]):not(:first-of-type)))::after,
@@ -4687,7 +4682,7 @@ li.chapter .secondary input[type="submit"] {
   display: block;
   font-size: 0.85rem;
   font-weight: normal;
-  color: #A8D2C1;
+  color: #546e7a;
 }
 
 body.works-show #main dl.work.meta.group,
@@ -4761,7 +4756,7 @@ body[class*="collections"] a.tag:focus-visible {
 ul.tags li a.tag:hover,
 ul.tags li a.tag:focus,
 ul.tags li a.tag:active {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   background: transparent !important;
   border: none !important;
 }
@@ -4770,24 +4765,24 @@ ul.tags li a.tag:active {
 #main .actions a:focus,
 #main .action:hover,
 #main .action:focus {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
   border: none !important;
   background: transparent !important;
 }
 
 #main .splash .favorite li,
 #main .splash .browse li {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
 }
 
 #main .splash .favorite li a,
 #main .splash .browse li a {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
 }
 
 #main .splash .favorite li a:hover,
 #main .splash .browse li a:hover {
-  color: #A8D2C1 !important;
+  color: #769DAD !important;
 }
 
 #main .splash .favorite li::marker,
@@ -4796,7 +4791,7 @@ ul.tags li a.tag:active {
 #main .splash .browse li::before,
 #main .splash .favorite li a::before,
 #main .splash .browse li a::before {
-  color: #8FC6B5 !important;
+  color: #4682B4 !important;
 }
 
 .thread {
@@ -4809,118 +4804,6 @@ ul.tags li a.tag:active {
   padding-left: 0 !important;
 }
 
-.listbox .heading,
-.listbox .heading a,
-.blurb h5.fandoms a.tag,
-.blurb h5.fandoms,
-.dashboard .module h3,
-.dashboard .module h3 a,
-div.user.home .heading,
-li.blurb .header .heading a {
-  color: #a7c0b5 !important;
-}
-
-.bookmark .user .datetime,
-.bookmark .user a {
-  color: #8da69c !important;
-}
-
-#header #greeting .dropdown > a[href*="/works/new"],
-#header #greeting .dropdown > a[href*="/users/"],
-#header #greeting a[href*="/users/logout"] {
-  filter: sepia(100%) hue-rotate(90deg) saturate(350%) brightness(0.95) contrast(0.9) 
-          drop-shadow(0 0 3px rgba(144, 238, 144, 0.6)) !important;
-  opacity: 1 !important;
-}
-
-#header #greeting .dropdown > a[href*="/works/new"]:hover,
-#header #greeting .dropdown > a[href*="/users/"]:hover,
-#header #greeting a[href*="/users/logout"]:hover {
-  filter: sepia(100%) hue-rotate(90deg) saturate(400%) brightness(1.1) contrast(1.0)
-          drop-shadow(0 0 5px rgba(144, 238, 144, 0.8)) !important;
-}
-
-:root {
-  --my-filter: sepia(100%) hue-rotate(80deg) saturate(200%) brightness(0.9) drop-shadow(0 0 2px rgba(201, 219, 203, 0.8)) !important;
-}
-
-#header #greeting > ul > li > a,
-#header #greeting > ul > li > a:hover,
-.home .primary.header.module .icon::before,
-.work.blurb::before,
-.bookmark.blurb::before,
-#main #user-series li.series.blurb::before,
-#dashboard::before,
-#dashboard.own::before,
-.status .rec,
-.status .public,
-.status .private,
-.status .hidden,
-#bookmark-symbols-key img,
-img[src$="/images/skins/iconsets/default/bookmark-rec.png"],
-img[src$="/images/skins/iconsets/default/bookmark-public.png"],
-img[src$="/images/skins/iconsets/default/bookmark-private.png"],
-img[src$="/images/skins/iconsets/default/bookmark-hidden.png"],
-.dropdown-menu::after,
-.menu::after {
-  -webkit-filter: var(--my-filter) !important;
-  filter: var(--my-filter) !important;
-}
-
-#main ol.pagination li a,
-#main ol.pagination li span {
-  color: #C9DBCB !important;
-  border-color: transparent !important;
-  background: transparent !important;
-}
-
-#main ol.pagination li.current,
-#main ol.pagination li.current span {
-  color: #76d2a8 !important;
-  font-weight: bold !important;
-}
-
-#main ol.pagination li.current::before,
-#main ol.pagination li.current::after {
-  background: #76d2a8 !important;
-}
-
-#workskin .summary .heading::before,
-#workskin .notes .heading::before,
-#work_endnotes .heading::before,
-.work.blurb .header h4.heading::after,
-.bookmark.blurb .header h4.heading::after,
-.work.blurb .header h4.heading:not(:has(a[rel="author"]))::after {
-  color: #a7c0b5 !important;
-}
-
-.work.blurb .header ul.required-tags,
-.bookmark.blurb .header ul.required-tags,
-li.work.blurb > .header > ul.required-tags,
-#main #user-series li.series.blurb .header ul.required-tags {
-  border-top: 1px solid rgba(167, 192, 181, 0.3) !important;
-}
-
-.datetime,
-.blurb .header .datetime,
-.comment h4.byline .datetime,
-dl.stats dt {
-  color: #8da69c !important;
-}
-
-dl.work.meta > dt,
-.blurb ul.required-tags li,
-.blurb ul.required-tags li a,
-.blurb ul.required-tags li span,
-.blurb ul.required-tags li::after {
-  color: #a7c0b5 !important;
-}
-
-.blurb ul.required-tags li + li::before {
-  color: #76d2a8 !important;
-  opacity: 0.7 !important;
-}
-
 #main form fieldset,
 #main fieldset,
 #main fieldset fieldset,
@@ -4929,49 +4812,27 @@ dl.work.meta > dt,
 #main .own,
 #main .secondary,
 #main .secondary form {
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: #FCFAF6 !important;
+  border: 1px solid #D4E0E7 !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
               0 2px 4px rgba(0, 0, 0, 0.05) !important;
   border-radius: 10px !important;
+  color: #2C3E50 !important;
 }
 
-#main #preview,
 #main #preview .wrapper,
 #main #preview .userstuff {
-  background-color: #31463D !important;
-  color: #EFEDE3 !important;
+  background-color: #FAF7F0 !important;
+  color: #2C3E50 !important;
   border: none !important;
   border-radius: 16px !important;
   padding: 16px !important;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0px 8px 24px rgba(63, 42, 82, 0.06) !important;
 }
 
 #main .work-wrapper,
 #main #workskin,
 #main .work {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-input[type="text"],
-input[type="search"] {
-  color: #EFEDE3 !important;
-  -webkit-text-fill-color: #EFEDE3 !important;
-}
-
-#main li.bookmark.blurb .own,
-#main li.bookmark.blurb form dl {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-}
-
-#main li.bookmark.blurb .own ul.actions,
-#main li.bookmark.blurb .own ul.actions li,
-#main li.bookmark.blurb .own ul.actions form {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -5049,7 +4910,7 @@ input[type="search"] {
 #main #bookmark_form .footnote,
 #main #bookmark-form .character_counter,
 #main #bookmark_form .character_counter {
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   background: transparent !important;
 }
 
@@ -5078,12 +4939,11 @@ input[type="search"] {
 #bookmark_form input[type="email"],
 #bookmark_form input[type="search"],
 #bookmark_form textarea {
-  background: #31463D !important;
-  color: #E7E3D8 !important;
-  -webkit-text-fill-color: #E7E3D8 !important;
-  border: 1px solid #22322C !important;
+  background: #FAF7F0 !important;
+  color: #2C3E50 !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 10px !important;
-  box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
+  box-shadow: none !important;
   padding: 0.65em 0.85em !important;
   width: 100% !important;
   box-sizing: border-box !important;
@@ -5096,7 +4956,6 @@ input[type="search"] {
 #bookmark-form textarea,
 #bookmark_form textarea {
   min-height: 12em !important;
-  resize: none !important;
 }
 
 #main form.bookmark input[type="text"]:focus,
@@ -5124,10 +4983,10 @@ input[type="search"] {
 #bookmark_form input[type="email"]:focus,
 #bookmark_form input[type="search"]:focus,
 #bookmark_form textarea:focus {
-  background: #25352F !important;
-  border-color: #A8D2C1 !important;
+  background: #FCFAF6 !important;
+  border-color: #769DAD !important;
   outline: none !important;
-  box-shadow: 0 3px 10px rgba(118,157,173,0.12) !important;
+  box-shadow: none !important;
 }
 
 #main form.bookmark .actions,
@@ -5159,7 +5018,7 @@ input[type="search"] {
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
   font-size: 0.85em !important;
   letter-spacing: 0.08em !important;
@@ -5201,8 +5060,8 @@ input[type="search"] {
 #bookmark_form .actions a:focus,
 #bookmark_form .actions input:focus,
 #bookmark_form .actions button:focus {
-  color: #8FC6B5 !important;
-  border-bottom-color: #A8D2C1 !important;
+  color: #4682B4 !important;
+  border-bottom-color: #769DAD !important;
   outline: none !important;
 }
 
@@ -5223,7 +5082,7 @@ input[type="search"] {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
+  color: #2C3E50 !important;
   font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
   font-size: 0.85em !important;
   letter-spacing: 0.08em !important;
@@ -5244,9 +5103,25 @@ input[type="search"] {
 #main .bookmark.blurb .actions a:focus,
 #main .bookmark.blurb .action:hover,
 #main .bookmark.blurb .action:focus {
-  color: #8FC6B5 !important;
-  border-bottom-color: #A8D2C1 !important;
+  color: #4682B4 !important;
+  border-bottom-color: #769DAD !important;
   background: transparent !important;
+}
+
+#main li.bookmark.blurb .own,
+#main li.bookmark.blurb form dl {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+#main li.bookmark.blurb .own ul.actions,
+#main li.bookmark.blurb .own ul.actions li,
+#main li.bookmark.blurb .own ul.actions form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 html body #main li.comment.group ul.actions li,
@@ -5264,12 +5139,12 @@ html body #dashboard li.comment.group ul.actions label,
 html body #dashboard li.unread.comment.group ul.actions label {
   display: inline-block !important;
   padding: 6px 12px !important;
-  border: 1px solid #22322C !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
-  background: rgba(49, 70, 61, 0.88) !important;
+  background: rgba(252, 250, 246, 0.88) !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
-  -webkit-text-fill-color: #E7E3D8 !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
   line-height: 1.2 !important;
 }
 
@@ -5277,7 +5152,7 @@ html body #main li.comment.group ul.actions input[type="checkbox"],
 html body #main li.unread.comment.group ul.actions input[type="checkbox"],
 html body #dashboard li.comment.group ul.actions input[type="checkbox"],
 html body #dashboard li.unread.comment.group ul.actions input[type="checkbox"] {
-  accent-color: #8FC6B5 !important;
+  accent-color: #4682B4 !important;
   vertical-align: middle !important;
   margin-right: 6px !important;
   transform: scale(1.08) !important;
@@ -5287,10 +5162,10 @@ html body #main li.comment.group ul.actions label:hover,
 html body #main li.unread.comment.group ul.actions label:hover,
 html body #dashboard li.comment.group ul.actions label:hover,
 html body #dashboard li.unread.comment.group ul.actions label:hover {
-  background: rgba(37, 53, 47, 0.92) !important;
-  border-color: #A8D2C1 !important;
-  color: #8FC6B5 !important;
-  -webkit-text-fill-color: #8FC6B5 !important;
+  background: rgba(212, 224, 231, 0.35) !important;
+  border-color: #769DAD !important;
+  color: #4682B4 !important;
+  -webkit-text-fill-color: #4682B4 !important;
 }
 
 html body #main form[action*="/faq"],
@@ -5309,12 +5184,12 @@ html body.faq #main form label {
   display: inline-block !important;
   padding: 6px 12px !important;
   margin: 0 8px 0 0 !important;
-  background: rgba(49, 70, 61, 0.88) !important;
-  border: 1px solid #22322C !important;
+  background: rgba(252, 250, 246, 0.88) !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
-  -webkit-text-fill-color: #E7E3D8 !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
   line-height: 1.2 !important;
   vertical-align: middle !important;
 }
@@ -5326,21 +5201,12 @@ html body.faq #main form select {
   vertical-align: middle !important;
   min-width: 140px !important;
   padding: 6px 10px !important;
-  background: #31463D !important;
-  border: 1px solid #22322C !important;
+  background: rgba(250, 247, 240, 0.95) !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
-  box-shadow: 0 2px 6px rgba(118,157,173,0.08) !important;
-  color: #E7E3D8 !important;
-  -webkit-text-fill-color: #E7E3D8 !important;
-}
-
-html body #main form[action*="/faq"] select:focus,
-html body #main form[action*="/faqs"] select:focus,
-html body.faq #main form select:focus {
-  background: #25352F !important;
-  border-color: #A8D2C1 !important;
-  outline: none !important;
-  box-shadow: 0 3px 10px rgba(118,157,173,0.12) !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
 }
 
 html body #main form[action*="/faq"] input[type="submit"],
@@ -5353,12 +5219,12 @@ html body.faq #main form button {
   vertical-align: middle !important;
   margin-left: 8px !important;
   padding: 6px 12px !important;
-  background: rgba(49, 70, 61, 0.88) !important;
-  border: 1px solid #22322C !important;
+  background: rgba(252, 250, 246, 0.88) !important;
+  border: 1px solid #AEC6CF !important;
   border-radius: 12px !important;
   box-shadow: none !important;
-  color: #E7E3D8 !important;
-  -webkit-text-fill-color: #E7E3D8 !important;
+  color: #2C3E50 !important;
+  -webkit-text-fill-color: #2C3E50 !important;
   text-decoration: none !important;
 }
 
@@ -5368,10 +5234,10 @@ html body #main form[action*="/faqs"] input[type="submit"]:hover,
 html body #main form[action*="/faqs"] button:hover,
 html body.faq #main form input[type="submit"]:hover,
 html body.faq #main form button:hover {
-  background: #25352F !important;
-  border-color: #A8D2C1 !important;
-  color: #8FC6B5 !important;
-  -webkit-text-fill-color: #8FC6B5 !important;
+  background: rgba(212, 224, 231, 0.35) !important;
+  border-color: #769DAD !important;
+  color: #4682B4 !important;
+  -webkit-text-fill-color: #4682B4 !important;
 }
 
 #main li.series.blurb .header.module,
@@ -5398,15 +5264,12 @@ html body.faq #main form button:hover {
   font-size: 1.2rem !important;
   font-weight: bold !important;
   margin-bottom: 2px !important;
-  color: #E7E3D8 !important;
 }
 
-#main li.series.blurb .header.module h4.heading a[rel="author"],
-#dashboard li.series.blurb .header.module h4.heading a[rel="author"] {
+#main li.series.blurb .header.module h4.heading a[rel="author"] {
   display: block !important;
   font-size: 1rem !important;
   margin-bottom: 0 !important;
-  color: #B7C2BC !important;
 }
 
 #main li.series.blurb .header.module .datetime,
@@ -5419,7 +5282,7 @@ html body.faq #main form button:hover {
   margin: 4px 0 !important;
   float: none !important;
   order: 2 !important;
-  color: #8da69c !important;
+  color: #78909c !important;
 }
 
 #main li.series.blurb .header.module ul.required-tags,
@@ -5443,14 +5306,12 @@ html body.faq #main form button:hover {
   float: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  color: #A8D2C1 !important;
 }
 
 #main li.series.blurb ul.required-tags li + li::before {
   vertical-align: middle !important;
   margin: 0 4px !important;
-  color: #76d2a8 !important;
-  opacity: 0.7 !important;
+  color: #AEC6CF !important;
 }
 
 #main li.series.blurb .header.module h5.fandoms.heading,
@@ -5467,23 +5328,23 @@ html body.faq #main form button:hover {
 }
 
 html body #main li.user.short.blurb.group {
-  background-color: rgba(49, 70, 61, 0.82) !important;
+  background-color: rgba(252, 250, 246, 0.82) !important;
   border: none !important;
   border-bottom: none !important;
   border-radius: 12px !important;
   margin-bottom: 10px !important;
   padding: 12px 16px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-left: 1px solid rgba(168, 210, 193, 0.18) !important;
-  color: #E7E3D8 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.9) !important;
+  border-left: 1px solid rgba(212, 224, 231, 0.7) !important;
+  color: #2C3E50 !important;
 }
 
 #main li.series.blurb,
 #dashboard li.series.blurb {
   position: relative !important;
   z-index: 0 !important;
-  background-color: #31463D !important;
+  background-color: #FCFAF6 !important;
   border-radius: 8px !important;
   border: none !important;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04),
@@ -5508,7 +5369,7 @@ html body #main li.user.short.blurb.group {
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
   background-size: 85px auto, 85px auto;
-  filter: invert(25%) sepia(60%) saturate(320%) hue-rotate(120deg) brightness(82%) contrast(90%);
+  filter: invert(25%) sepia(60%) saturate(400%) hue-rotate(175deg) brightness(85%) contrast(90%);
 }
 
 #main li.series.blurb > *,
@@ -5528,7 +5389,7 @@ html body #main li.user.short.blurb.group {
   font-size: 0.6875rem !important;
   letter-spacing: 0.01em !important;
   line-height: 1.5 !important;
-  color: #B7C2BC !important;
+  color: #667583 !important;
   border: none !important;
   background: transparent !important;
 }
@@ -5553,34 +5414,34 @@ html body #main li.user.short.blurb.group {
   padding: 0 !important;
   text-decoration: none !important;
   border: none !important;
-  color: #B7C2BC !important;
+  color: #667583 !important;
 }
 
 #main li.series.blurb dl.stats dd.words::before,
 #dashboard li.series.blurb dl.stats dd.words::before {
   content: "Words " !important;
   font-weight: 600 !important;
-  color: #D7E0DA !important;
+  color: #3f4e5a !important;
 }
 
 #main li.series.blurb dl.stats dd.works::before,
 #dashboard li.series.blurb dl.stats dd.works::before {
   content: "Works " !important;
   font-weight: 600 !important;
-  color: #D7E0DA !important;
+  color: #3f4e5a !important;
 }
 
 #main li.series.blurb dl.stats dd.bookmarks::before,
 #dashboard li.series.blurb dl.stats dd.bookmarks::before {
   content: "Bookmarks " !important;
   font-weight: 600 !important;
-  color: #D7E0DA !important;
+  color: #3f4e5a !important;
 }
 
 #main li.series.blurb dl.stats dd:not(:last-child)::after,
 #dashboard li.series.blurb dl.stats dd:not(:last-child)::after {
   content: " · " !important;
-  color: #93A39A !important;
+  color: #9aa8b5 !important;
 }
 
 #main li.series.blurb dl.stats dd.bookmarks::before,
@@ -5589,23 +5450,5 @@ html body #main li.user.short.blurb.group {
 #dashboard .series.blurb dl.stats dd.bookmarks::before {
   content: "Bookmarks " !important;
   font-weight: 600 !important;
-  color: #D7E0DA !important;
-}
-
-#main li.series.blurb .header.module h4.heading a:first-of-type:hover,
-#main li.series.blurb .header.module h4.heading a:first-of-type:focus,
-#dashboard li.series.blurb .header.module h4.heading a:first-of-type:hover,
-#dashboard li.series.blurb .header.module h4.heading a:first-of-type:focus {
-  color: #8FC6B5 !important;
-}
-
-#main li.series.blurb .header.module h4.heading a:first-of-type:hover,
-#main li.series.blurb .header.module h4.heading a:first-of-type:focus,
-#dashboard li.series.blurb .header.module h4.heading a:first-of-type:hover,
-#dashboard li.series.blurb .header.module h4.heading a:first-of-type:focus,
-#main li.series.blurb .header.module h4.heading a[rel="author"]:hover,
-#main li.series.blurb .header.module h4.heading a[rel="author"]:focus,
-#dashboard li.series.blurb .header.module h4.heading a[rel="author"]:hover,
-#dashboard li.series.blurb .header.module h4.heading a[rel="author"]:focus {
-  color: #8FC6B5 !important;
+  color: #3f4e5a !important;
 }
