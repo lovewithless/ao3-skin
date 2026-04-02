@@ -2370,9 +2370,8 @@ ol.comment.index.group .unread {
 #chapters .userstuff li,
 #chapters .userstuff blockquote {
   color: #111111 !important;
-  font-family: -apple-system, BlinkMacSystemFont,
-               "PingFang SC", "Microsoft YaHei",
-               "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Arial, sans-serif,
+               "PingFang SC", "Microsoft YaHei" !important;
   line-height: 1.5 !important;
   font-size: 0.9rem !important;
 }
@@ -2421,9 +2420,8 @@ ol.comment.index.group .unread {
 #chapters .userstuff h3,
 #chapters .userstuff h4 {
   color: #111111 !important;
-  font-family: -apple-system, BlinkMacSystemFont,
-               "PingFang SC", "Microsoft YaHei",
-               "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Arial, sans-serif,
+               "PingFang SC", "Microsoft YaHei" !important;
 }
 
 img[src$="/images/lockblue.png"] {
