@@ -4926,7 +4926,6 @@ dl.work.meta > dt,
 #main fieldset fieldset,
 #main #preview,
 #main #preview .wrapper,
-#main .own,
 #main .secondary,
 #main .secondary form {
   background: #31463D !important;
@@ -4948,8 +4947,7 @@ dl.work.meta > dt,
 }
 
 #main .work-wrapper,
-#main #workskin,
-#main .work {
+#main #workskin {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
