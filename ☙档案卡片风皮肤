@@ -4809,7 +4809,6 @@ ul.tags li a.tag:active {
 #main fieldset fieldset,
 #main #preview,
 #main #preview .wrapper,
-#main .own,
 #main .secondary,
 #main .secondary form {
   background: #FCFAF6 !important;
@@ -4831,8 +4830,7 @@ ul.tags li a.tag:active {
 }
 
 #main .work-wrapper,
-#main #workskin,
-#main .work {
+#main #workskin {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
