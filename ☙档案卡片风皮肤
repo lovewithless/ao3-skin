@@ -5450,3 +5450,51 @@ html body #main li.user.short.blurb.group {
   font-weight: 600 !important;
   color: #3f4e5a !important;
 }
+
+html body #footer .menu,
+html body #footer .dropdown-menu,
+html body #footer ul,
+html body #footer ul.menu {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-width: 0 !important;
+  padding: 0 0 0 1.5em !important;
+  margin: 0 !important;
+}
+
+html body #footer li {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0.45em 0 !important;
+  padding: 0 !important;
+}
+
+html body #footer a,
+html body #footer a:link,
+html body #footer a:visited {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #2C3E50 !important;
+  display: inline-block !important;
+  padding: 0.12em 0 !important;
+  line-height: 1.7 !important;
+  text-decoration: none !important;
+}
+
+html body #footer a:hover,
+html body #footer a:focus,
+html body #footer a:active {
+  color: #1f2a36 !important;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(44, 62, 80, 0.45) !important;
+}
+
+html body #footer,
+html body #footer * {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: manual !important;
+}
