@@ -5663,24 +5663,3 @@ html body #footer * {
   hyphens: manual !important;
 }
 
-#main ul.navigation.actions li form,
-#main ul.navigation.actions li form p {
-  display: inline !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#main ul.navigation.actions li input[type="submit"],
-#main ul.navigation.actions li button {
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  display: inline !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  font: inherit !important;
-  line-height: 1.2 !important;
-  vertical-align: baseline !important;
-}
