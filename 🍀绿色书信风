@@ -764,29 +764,6 @@ form dl {
   text-decoration: underline;
 }
 
-.index .skins .icon {
-  background: url("https://64.media.tumblr.com/eec7348efbdc63a837497b4eeef83699/f1e54816765c8670-47/s100x200/a6ee7889005575015d207497b4eeef83699.png");
-  background-size: 55px 55px;
-  background-repeat: no-repeat;
-  border-radius: 8px !important;
-  box-shadow: 0px 0px 4px rgba(237, 218, 188, 0.1) !important;
-}
-
-.comment div.icon .visitor {
-  background: url("https://64.media.tumblr.com/18aca2e6e5d0df75361dce727c1e1a3d/f1e54816765c8670-35/s100x200/66e4d763d029ed1b6516ce005c4684f8d3f4a8bd.png");
-  background-size: 100px 100px;
-  background-repeat: no-repeat;
-  border-radius: 8px !important;
-  box-shadow: 0px 0px 4px rgba(237, 218, 188, 0.1) !important;
-}
-
-.comment div.icon {
-  background: rgba(253, 250, 236, 0.85);
-  border-bottom: none !important;
-  border-radius: 8px 0px 0px 0px !important;
-  box-shadow: 0px 0px 4px rgba(237, 218, 188, 0.1) !important;
-}
-
 div.comment {
   border: none;
 }
@@ -1665,47 +1642,6 @@ p.kudos a:hover {
   color: #fdfaec !important;
 }
 
-.tag .icon {
-  background: #58433A !important;
-  width: 100px !important;
-  height: 100px !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 8px !important;
-  background-image: none !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.tag .icon::before {
-  content: "✧" !important;
-  font-size: 80pt !important;
-  color: #aac8a9 !important;
-  text-shadow: 0 0 10px #fdfaec, 0 0 20px #fdfaec !important;
-  line-height: 1 !important;
-}
-
-.tag .icon {
-  background: #fdfaec !important;
-  width: 100px !important;
-  height: 100px !important;
-  border: none !important;
-  border-radius: 12px !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  box-shadow: 0px 4px 8px rgba(87, 49, 13, 0.2) !important;
-}
-
-.tagset .primary .icon {
-  background: url("https://64.media.tumblr.com/469b84bff3a6958f7e81c40e9707fbda/f1e54816765c8670-69/s100x200/411304309b32b1069a190232ca75037f039a349a.png");
-  background-size: 100px 100px;
-  background-repeat: no-repeat;
-  border: none !important;
-  box-shadow: 0px 0px 4px rgba(237, 218, 188, 0.1) !important;
-}
-
 .pagination .current {
   background: #aac8a9 !important;
   color: #fdfaec !important;
@@ -2367,4 +2303,53 @@ li.pseud.blurb,
 
 .pseud .icon {
   border: none !important;
+}
+
+ol.index li.tagset.blurb,
+li.tagset.blurb,
+li.tagset.picture.blurb,
+#main li.tagset.blurb,
+#main li.tagset.picture.blurb {
+  border-image: none !important;
+  background-color: #fdfaec !important;
+  background: #fdfaec !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 15px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0px 4px 10px rgba(87, 49, 13, 0.1) !important;
+  list-style: none !important;
+}
+
+li.tagset.blurb .header,
+li.tagset.picture.blurb .header {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+ol.index li.skins.blurb,
+ol.index li.skins.picture.blurb,
+li.skins.blurb,
+li.skins.picture.blurb,
+#main li.skins.blurb,
+#main li.skins.picture.blurb,
+#main.skins-index li.blurb,
+#main.users-skins li.blurb {
+  border-image: none !important;
+  background-color: #fdfaec !important;
+  background: #fdfaec !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 15px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0px 4px 10px rgba(87, 49, 13, 0.1) !important;
+  list-style: none !important;
+}
+
+li.skins.blurb .header,
+li.skins.picture.blurb .header {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
 }
