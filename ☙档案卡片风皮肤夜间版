@@ -1149,8 +1149,8 @@ div.download a:focus,
   margin: 0 !important;
 }
 
-#workskin ul.actions li,
-#main .actions li {
+#workskin ul.actions > li,
+#main .actions > li {
   display: inline-flex !important;
   align-items: center !important;
   margin: 0 0.8em 0.4em 0.8em !important;
@@ -2927,8 +2927,8 @@ body[class*=" skins-"] #main .navigation {
   margin: 0 0 1em 0 !important;
 }
 
-body[class^="skins-"] #main .navigation li,
-body[class*=" skins-"] #main .navigation li {
+body[class^="skins-"] #main .navigation > li,
+body[class*=" skins-"] #main .navigation > li {
   list-style: none !important;
   display: inline-block !important;
   margin: 0 0.6em 0 0 !important;
@@ -3495,7 +3495,7 @@ html body #header h1.heading a {
   height: 0 !important;
   padding-top: 43.75% !important;
   margin: 10px auto !important;
-  background-image: url("https://64.media.tumblr.com/1b1358dcf1847d95d1d600d53a7763e7/aff69673f81f1cb2-2a/s2048x3072/24062701201186fbaaab4b214516e6f753abe442.png") !important;
+  background: url("https://raw.githubusercontent.com/lovewithless/-beta1.0/main/icon/IMG_1062.PNG");
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: contain !important;
@@ -3934,10 +3934,6 @@ li.bookmark.blurb .header h4.heading a:first-of-type:visited:hover,
 li.work.blurb .header h4.heading a[href*="/users/"]:visited:hover,
 li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited:hover {
   color: #7DBAA0 !important;
-}
-
-#dashboard .hidden {
-  display: initial !important;
 }
 
 #dashboard ul.expandable.secondary.hidden {
@@ -5607,59 +5603,3 @@ html body #main li.user.short.blurb.group {
 #dashboard li.series.blurb .header.module h4.heading a[rel="author"]:focus {
   color: #8FC6B5 !important;
 }
-
-/* ========== 修复全局 menu 污染导致的页脚排版错乱 (夜间版配色) ========== */
-
-/* 1. 强行扒掉页脚的卡片外壳，恢复透明和自然分列 */
-html body #footer .menu,
-html body #footer .dropdown-menu,
-html body #footer ul,
-html body #footer ul.menu {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  min-width: 0 !important; /* 解除死板的宽度限制，防止手机端重叠 */
-  padding: 0 0 0 1.5em !important; /* 恢复奶油可可的左侧缩进 */
-  margin: 0 !important;
-}
-
-/* 2. 梳理列表项的间距，让排版呼吸感更好 */
-html body #footer li {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  margin: 0.45em 0 !important;
-  padding: 0 !important;
-}
-
-/* 3. 统一夜间版的文字链接，并保留优良的点击体验 */
-html body #footer a,
-html body #footer a:link,
-html body #footer a:visited {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  color: #E7E3D8 !important; /* 夜间版页脚文字色 (奶皮白) */
-  display: inline-block !important;
-  padding: 0.12em 0 !important;
-  line-height: 1.7 !important; /* 奶油可可的舒展行高 */
-  text-decoration: none !important;
-}
-
-/* 4. 悬停效果：变为夜间版的主题薄荷绿并出现下划线 */
-html body #footer a:hover,
-html body #footer a:focus,
-html body #footer a:active {
-  color: #8FC6B5 !important; /* 夜间版强调色 (薄荷绿) */
-  background: transparent !important;
-  border-bottom: 1px solid rgba(143, 198, 181, 0.45) !important; /* 匹配强调色的柔和下划线 */
-}
-
-/* 5. 确保文字在小屏幕上不会生硬截断 */
-html body #footer,
-html body #footer * {
-  word-break: normal !important;
-  overflow-wrap: normal !important;
-  hyphens: manual !important;
-}
-
