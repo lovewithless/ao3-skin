@@ -372,10 +372,9 @@ li.bookmark.blurb > .header > ul.required-tags {
   padding: 0;
 }
 
-.dropdown-menu,
-.menu,
-body .dropdown-menu,
-body .menu {
+#header .dropdown-menu,
+#header .menu,
+#main .secondary .menu {
   background: #FCFAF6 !important;
   background-image: none !important;
   border: 1px solid #769DAD !important;
@@ -385,17 +384,9 @@ body .menu {
   padding: 8px 0 26px !important;
 }
 
-#footer .dropdown-menu,
-#footer .menu {
-  background: transparent !important;
-  background-image: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 5px 0 !important;
-}
-
-.dropdown-menu::after,
-.menu::after {
+#header .dropdown-menu::after,
+#header .menu::after,
+#main .secondary .menu::after {
   content: "" !important;
   position: absolute !important;
   width: 20px;
@@ -409,11 +400,6 @@ body .menu {
   opacity: 0.9;
   filter: invert(25%) sepia(60%) saturate(400%)
           hue-rotate(175deg) brightness(85%) contrast(90%) !important;
-}
-
-#footer .dropdown-menu::after,
-#footer .menu::after {
-  content: none !important;
 }
 
 ul.tags {
@@ -1185,8 +1171,8 @@ div.download a:focus,
   font-size: 0.78em !important;
 }
 
-#dashboard:not(.own) ul.primary,
-#dashboard:not(.own) ul.secondary {
+#dashboard:not(.own) > ul.primary,
+#dashboard:not(.own) > ul.secondary {
   margin: 0 !important;
   padding: 0.15em 0 0.1em 0 !important;
   list-style: none !important;
@@ -1195,14 +1181,14 @@ div.download a:focus,
   justify-content: center !important;
 }
 
-#dashboard:not(.own) ul.primary li,
-#dashboard:not(.own) ul.secondary li {
+#dashboard:not(.own) > ul.primary li,
+#dashboard:not(.own) > ul.secondary li {
   margin: 0 0.7em 0.25em 0.7em !important;
   padding: 0 !important;
 }
 
-#dashboard:not(.own) ul.primary li a,
-#dashboard:not(.own) ul.secondary li a {
+#dashboard:not(.own) > ul.primary li a,
+#dashboard:not(.own) > ul.secondary li a {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -1296,17 +1282,17 @@ div.download a:focus,
   text-align: center;
 }
 
-#dashboard.own ul.navigation li,
-#dashboard.own ul.primary li {
-  display: inline-block;
+#dashboard.own > ul.navigation > li,
+#dashboard.own > ul.primary > li {
+  display: inline-block !important;
   margin: 0 0.7em 0.15em !important;
 }
 
-#dashboard.own ul.navigation li a,
-#dashboard.own ul.navigation li span,
-#dashboard.own ul.primary li a,
-#dashboard.own ul.primary li span {
-  display: inline-block;
+#dashboard.own > ul.navigation > li > a,
+#dashboard.own > ul.navigation > li > span,
+#dashboard.own > ul.primary > li > a,
+#dashboard.own > ul.primary > li > span {
+  display: inline-block !important;
   font-size: 0.8em !important;
   padding: 0.1em 0.3em !important;
   text-decoration: none !important;
@@ -1314,10 +1300,10 @@ div.download a:focus,
   color: #2C3E50 !important;
 }
 
-#dashboard.own ul.navigation li a:hover,
-#dashboard.own ul.navigation li a:focus,
-#dashboard.own ul.primary li a:hover,
-#dashboard.own ul.primary li a:focus {
+#dashboard.own > ul.navigation > li > a:hover,
+#dashboard.own > ul.navigation > li > a:focus,
+#dashboard.own > ul.primary > li > a:hover,
+#dashboard.own > ul.primary > li > a:focus {
   color: #2C3E50 !important;
   border-bottom: none !important;
   background: transparent !important;
@@ -1480,55 +1466,6 @@ img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
   font-size: 1em !important;
   line-height: 1.5 !important;
   white-space: nowrap !important;
-}
-
-body .dropdown-menu,
-body .menu {
-  min-width: 150px !important;
-  padding: 12px 0 !important;
-}
-
-body .dropdown-menu a,
-body .menu a {
-  padding: 8px 20px !important;
-  font-size: 1em !important;
-}
-
-#footer .dropdown-menu,
-#footer .menu {
-  min-width: auto !important;
-  padding: 5px 0 !important;
-}
-
-#footer .dropdown-menu a,
-#footer .menu a {
-  padding: 5px 15px !important;
-  font-size: 0.85em !important;
-}
-
-#footer {
-  border-top: none !important;
-}
-
-#footer .dropdown-menu,
-#footer .menu {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  text-indent: 0 !important;
-}
-
-#footer .dropdown-menu a,
-#footer .menu a {
-  background: transparent !important;
-  border: none !important;
-  white-space: normal !important;
-  padding: 5px 0 !important;
-  line-height: 1.4;
-  text-indent: 0 !important;
-  margin-left: 0 !important;
-  text-decoration: none !important;
 }
 
 #main ul.navigation.actions li,
@@ -2477,111 +2414,6 @@ body.tags-show .primary.header.module {
   display: none !important;
 }
 
-body .dropdown-menu li,
-body .menu li {
-  background: transparent !important;
-  border-radius: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  position: relative !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style: none !important;
-}
-
-body .dropdown-menu li:hover,
-body .dropdown-menu li:focus-within,
-body .menu li:hover,
-body .menu li:focus-within {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-body .dropdown-menu li > a,
-body .dropdown-menu li > span,
-body .menu li > a,
-body .menu li > span {
-  display: block !important;
-  padding: 6px 18px !important;
-  margin: 0 !important;
-  color: #2C3E50 !important;
-  text-decoration: none !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  line-height: 1.5 !important;
-  font-weight: normal !important;
-}
-
-body .dropdown-menu li > a:hover,
-body .dropdown-menu li > span:hover,
-body .menu li > a:hover,
-body .menu li > span:hover,
-body .dropdown-menu li > a:focus,
-body .dropdown-menu li > span:focus,
-body .menu li > a:focus,
-body .menu li > span:focus,
-body .dropdown-menu li > a:active,
-body .dropdown-menu li > span:active,
-body .menu li > a:active,
-body .menu li > span:active {
-  color: #1f2a36 !important;
-  padding: 6px 18px !important;
-  margin: 0 !important;
-  border: none !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-  font-weight: normal !important;
-}
-
-body .dropdown-menu a.current,
-body .dropdown-menu span.current,
-body .dropdown-menu a.selected,
-body .dropdown-menu span.selected,
-body .menu a.current,
-body .menu span.current,
-body .menu a.selected,
-body .menu span.selected {
-  background: transparent !important;
-  border-radius: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  color: #1f2a36 !important;
-  padding: 6px 18px !important;
-  margin: 0 !important;
-  position: relative !important;
-  text-decoration: none !important;
-  font-weight: normal !important;
-}
-
-body .dropdown-menu li.current,
-body .dropdown-menu li.selected,
-body .menu li.current,
-body .menu li.selected {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-body .dropdown-menu a.current::after,
-body .dropdown-menu span.current::after,
-body .dropdown-menu a.selected::after,
-body .dropdown-menu span.selected::after,
-body .menu a.current::after,
-body .menu span.current::after,
-body .menu a.selected::after,
-body .menu span.selected::after {
-  content: none !important;
-  border: none !important;
-}
-
 #header .dropdown-menu li,
 #header .menu li {
   margin: 0 !important;
@@ -3495,7 +3327,7 @@ html body #header h1.heading a {
   height: 0 !important;
   padding-top: 43.75% !important;
   margin: 10px auto !important;
-  background-image: url("https://64.media.tumblr.com/1b1358dcf1847d95d1d600d53a7763e7/aff69673f81f1cb2-2a/s2048x3072/24062701201186fbaaab4b214516e6f753abe442.png") !important;
+  background: url("https://raw.githubusercontent.com/lovewithless/-beta1.0/main/icon/IMG_1062.PNG");
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: contain !important;
@@ -3931,18 +3763,6 @@ li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited:hover {
   color: #5E6F9B !important;
 }
 
-#dashboard .hidden {
-  display: initial !important;
-}
-
-#dashboard ul.expandable.secondary.hidden {
-  display: none !important;
-}
-
-#dashboard ul.expandable.secondary:not(.hidden) {
-  display: block !important;
-}
-
 dl.work.meta dd.relationship ul.tags li,
 dl.work.meta dd.relationship ul.commas li a.tag,
 dl.work.meta dd.relationship ul.commas li a.tag,
@@ -4367,7 +4187,7 @@ li.chapter .secondary input[type="submit"] {
   border-radius: 999px !important;
   box-shadow: 0 2px 8px rgba(118,157,173,0.15) !important;
   padding: 6px 14px !important;
-  margin: 0 0 10px 10pxexplains !important;
+  margin: 0 0 10px 10px !important;
   color: #2C3E50 !important;
   font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
   font-weight: bold !important;
@@ -5499,3 +5319,59 @@ html body #footer * {
   hyphens: manual !important;
 }
 
+#dashboard .hidden,
+#dashboard ul.secondary.hidden,
+#dashboard ul.expandable.secondary.hidden,
+#dashboard ul.navigation .expandable.secondary.hidden {
+  display: none !important;
+}
+
+#dashboard ul.expandable.secondary,
+#dashboard ul.navigation .expandable.secondary {
+  display: none !important;
+}
+
+#dashboard ul.expandable.secondary:not(.hidden),
+#dashboard ul.navigation .expandable.secondary:not(.hidden) {
+  display: block !important;
+}
+
+#dashboard:not(.own) > ul.primary,
+#dashboard:not(.own) > ul.secondary {
+  margin: 0 !important;
+  padding: 0.15em 0 0.1em 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+#dashboard:not(.own) > ul.primary > li,
+#dashboard:not(.own) > ul.secondary > li {
+  margin: 0 0.7em 0.25em 0.7em !important;
+  padding: 0 !important;
+}
+
+#dashboard:not(.own) > ul.primary > li > a,
+#dashboard:not(.own) > ul.secondary > li > a {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: inline-block !important;
+  padding: 0 0.25em 2px 0.25em !important;
+  margin: 0 !important;
+  font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
+  font-size: 1em !important;
+  font-variant: small-caps;
+  letter-spacing: 0.08em !important;
+  text-transform: none !important;
+  color: #2C3E50 !important;
+  text-decoration: none !important;
+}
+
+#dashboard:not(.own) > ul.primary > li > ul.expandable.secondary,
+#dashboard:not(.own) > ul.secondary > li > ul.expandable.secondary,
+#dashboard:not(.own) > ul.navigation > li > ul.expandable.secondary {
+  flex-wrap: nowrap !important;
+}
