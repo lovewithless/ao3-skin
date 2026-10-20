@@ -5546,3 +5546,26 @@ div#admin-banner {
   border: none !important;
   box-shadow: none !important;
 }
+
+
+#main #chapter_index form,
+#main #chapter_index fieldset,
+#main #chapter_index form p,
+#main #chapter_index form dl,
+#main #chapter_index form dd,
+#main #chapter_index .submit,
+#main #chapter_index .submit.actions {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#main #chapter_index form,
+#main #chapter_index fieldset {
+  margin: 0 !important;
+  padding: 0 !important;
+}
