@@ -2353,3 +2353,174 @@ li.skins.picture.blurb .header {
   border: none !important;
   border-bottom: none !important;
 }
+
+
+#admin-banner,
+#admin-banner.event.announcement.group,
+div#admin-banner {
+  background: #FDFAEC !important;
+  background-color: #FDFAEC !important;
+  background-image: none !important;
+  color: #57310D !important;
+  border: 1px solid #CADAB2 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 18px rgba(87,49,13,0.10) !important;
+  padding: 10px 14px !important;
+  margin: 10px auto !important;
+  max-width: 88% !important;
+  font-size: 0.78em !important;
+  line-height: 1.45 !important;
+}
+
+#admin-banner blockquote,
+#admin-banner blockquote.userstuff,
+#admin-banner .userstuff {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#admin-banner p {
+  background: transparent !important;
+  color: #57310D !important;
+  margin: 0 0 6px 0 !important;
+  padding: 0 !important;
+  line-height: 1.45 !important;
+  text-shadow: none !important;
+}
+
+#admin-banner strong,
+#admin-banner span {
+  background: transparent !important;
+  color: #57310D !important;
+  text-shadow: none !important;
+}
+
+#admin-banner a {
+  color: #57310D !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #9BAA7E !important;
+}
+
+#admin-banner a:hover {
+  color: #8E9E29 !important;
+  background: #E9F2CE !important;
+  border-bottom: 1px dotted #8E9E29 !important;
+}
+
+#admin-banner .thermometer-content {
+  width: 80% !important;
+  height: 1.6em !important;
+  margin: 10px auto 4px auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#admin-banner .thermometer {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#admin-banner .thermometer .track {
+  margin: 0 !important;
+  height: 1.6em !important;
+  background: #E9F2CE !important;
+  background-color: #E9F2CE !important;
+  background-image: none !important;
+  border: 1px solid #CADAB2 !important;
+  border-radius: 9999px !important;
+  box-shadow: inset 0 1px 3px rgba(87,49,13,0.12) !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#admin-banner .thermometer .track div.progress {
+  background: #AAC8A9 !important;
+  background-color: #AAC8A9 !important;
+  background-image: none !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.28),
+    0 1px 3px rgba(87,49,13,0.16) !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  min-width: fit-content !important;
+  position: relative !important;
+}
+
+#admin-banner .thermometer .progress .amount {
+  color: #57310D !important;
+  background: transparent !important;
+  padding: 0 0.75em !important;
+  font-weight: bold !important;
+  font-size: 0.95em !important;
+  text-shadow: none !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  line-height: 2em !important;
+}
+
+#admin-banner .thermometer .goal {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+#admin-banner .thermometer .goal .amount {
+  color: #57310D !important;
+  background: transparent !important;
+  padding: 0 0.75em !important;
+  font-weight: bold !important;
+  font-size: 0.95em !important;
+  text-shadow: none !important;
+  white-space: nowrap !important;
+  line-height: 1.8em !important;
+}
+
+#admin-banner blockquote .progress,
+#admin-banner blockquote .goal {
+  color: #57310D !important;
+  font-weight: bold !important;
+}
+
+#admin-banner blockquote .progress {
+  background: transparent !important;
+}
+
+#admin-banner blockquote .goal {
+  background: transparent !important;
+}
+
+#admin-banner button.showme,
+#admin-banner .showme.action,
+#admin-banner button[aria-label="hide banner"] {
+  background: transparent !important;
+  color: #8E9E29 !important;
+  border: none !important;
+  box-shadow: none !important;
+  opacity: 0.7 !important;
+  font-size: 1em !important;
+  padding: 4px 6px !important;
+}
+
+#admin-banner button.showme:hover,
+#admin-banner .showme.action:hover,
+#admin-banner button[aria-label="hide banner"]:hover {
+  background: transparent !important;
+  color: #57310D !important;
+  opacity: 1 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
